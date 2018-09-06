@@ -10,5 +10,8 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+  @import '~styles/samecolor.styl'
+  #app
+    background-color: $bgcolor
 </style>

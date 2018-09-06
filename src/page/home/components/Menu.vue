@@ -28,9 +28,12 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.MenuBox
+  background-color: #fff
   .item-box
     width: 100%
     overflow: hidden
+    padding: 0.2rem 0
     .item
       width: 25%
       float: left
@@ -44,4 +47,12 @@ export default {
         margin: 0.2rem 0
         span
           font-size: 0.4rem
+        .icon-city
+          color: #479bf1
+        .icon-school
+          color: #f0924a
+        .icon-bed
+          color: #67b58e
+        .icon-fuwu
+          color: #f1c250
 </style>

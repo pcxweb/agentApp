@@ -40,7 +40,8 @@ export default {
     opacity: 1
   .bannerBox
     width: 100%
-    heigth: 3.4rem
+    height: 0
+    padding-bottom: 45%
     .banner-img
       width: 100%
 </style>
