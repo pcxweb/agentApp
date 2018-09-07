@@ -2,3 +2,10 @@ ellipsis()
   overflow: hidden
   white-space: nowrap
   text-overflow: ellipsis
+clearfloat()
+  &:after
+    content: "."
+    clear: both
+    display: block
+    visibility: hidden
+    height: 0

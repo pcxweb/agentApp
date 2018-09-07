@@ -4,10 +4,14 @@
       <swiper :options="swiperOption">
         <!-- slides -->
         <swiper-slide>
-          <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
+          <router-link to="/school/001">
+            <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
+          </router-link>
         </swiper-slide>
         <swiper-slide>
-          <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
+          <router-link to="/school/002">
+            <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
+          </router-link>
         </swiper-slide>
         <!-- Optional controls -->
         <div class="swiper-pagination"  slot="pagination"></div>
