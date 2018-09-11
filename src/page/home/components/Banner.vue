@@ -4,14 +4,14 @@
       <swiper :options="swiperOption">
         <!-- slides -->
         <swiper-slide>
-          <router-link to="/school/001">
-            <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
-          </router-link>
+          <!-- <router-link to="/school/116"> -->
+            <img @click="handleSdetail(116)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
+          <!-- </router-link> -->
         </swiper-slide>
         <swiper-slide>
-          <router-link to="/school/002">
-            <img class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
-          </router-link>
+          <!-- <router-link to="/school/119"> -->
+            <img @click="handleSdetail(119)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
+          <!-- </router-link> -->
         </swiper-slide>
         <!-- Optional controls -->
         <div class="swiper-pagination"  slot="pagination"></div>
@@ -21,6 +21,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'HomeBanner',
   data () {
@@ -30,6 +31,14 @@ export default {
         pagination: '.swiper-pagination'
       }
     }
+  },
+  methods: {
+    handleSdetail (ids) {
+      // alert(1)
+      this.changeSids(ids)
+      this.$router.push('/school/' + ids)
+    },
+    ...mapMutations(['changeSids'])
   }
 }
 </script>

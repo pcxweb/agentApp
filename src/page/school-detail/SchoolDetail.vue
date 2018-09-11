@@ -7,6 +7,7 @@
 
 <script>
 import axios from 'axios'
+import { mapState } from 'vuex'
 import SdetailTop from './components/SdetailTop'
 import SdetailMenu from './components/SdetailMenu'
 export default {
@@ -17,24 +18,34 @@ export default {
   },
   data () {
     return {
-      detailList: {}
+      detailList: {},
+      idval: ''
     }
+  },
+  computed: {
+    ...mapState(['schoolId'])
   },
   methods: {
     getschoolDetail () {
-      axios.get('http://api.beanhome.com/schools/119')
+      axios.get('http://api.beanhome.com/schools/' + this.$route.params.id)
         .then(this.getschoolDetailSucc)
     },
     getschoolDetailSucc (res) {
       const datas = res.data
-      console.log(res)
       if (res.status === 200 && datas.data) {
         this.detailList = datas.data
       }
     }
   },
   mounted () {
+    this.idval = this.schoolId
     this.getschoolDetail()
+  },
+  activated () {
+    if (this.idval !== this.schoolId) {
+      this.idval = this.schoolId
+      this.getschoolDetail()
+    }
   }
 }
 </script>

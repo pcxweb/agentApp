@@ -7,7 +7,7 @@
       学校详情
     </div>
     <div class="top-img">
-      <img class="img-con" :src="datalist.thumbnail" alt="">
+      <img class="img-con" :src="datalist.thumbnail+'?x-oss-process=image/crop,w_562,h_313,g_center'" alt="">
       <div class="mask"></div>
       <div class="info">
         <h2>{{datalist.cn_name}}</h2>

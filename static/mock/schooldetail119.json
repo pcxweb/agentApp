@@ -1,0 +1,571 @@
+{
+  "data": {
+    "id": 119,
+    "number": "S119",
+    "en_name": "Houston Christian High School",
+    "cn_name": "休斯顿基督高中",
+    "website": "http://www.houstonchristian.org/",
+    "address": "2700 West Sam Houston Pkwy N, Houston, TX 77043",
+    "thumbnail": "http://pic.beanhomestay.com/photos/school/119/2018/013d4263a52e2e614b9c29489795e343.jpg",
+    "type": 1,
+    "thumbnail_pc": "http://pic.beanhomestay.com/photos/school/119/2018/5cfa1743108db28b3ade2159c24893be.png",
+    "photos": [{
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/5cfa1743108db28b3ade2159c24893be.png",
+      "title": "校园",
+      "id": 2659
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/eecd16c5ca3ebd8de8e11106d9ed51a0.png",
+      "title": "艺术社团",
+      "id": 2660
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/f22bd5096fcd52ab04ccba75a057985c.png",
+      "title": "校外活动",
+      "id": 2661
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/013d4263a52e2e614b9c29489795e343.jpg",
+      "title": "学校",
+      "id": 2911
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/e25eafd7d44e9b675bf8209140702b9c.jpg",
+      "title": "校园",
+      "id": 2912
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/b7ba19ad18172cda227cfabc049f40ed.jpg",
+      "title": "校园一角",
+      "id": 2914
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/ba8f1f1b10bbdf5976607140b7a29f0c.jpg",
+      "title": "学校建筑",
+      "id": 2915
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/3cef3270a784c03a03c35ae0307d0b6a.jpg",
+      "title": "艺术活动",
+      "id": 2916
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/119/2018/d8ba937ed6c9c6e430fe585c80d0a470.jpg",
+      "title": "体育活动",
+      "id": 2917
+    }],
+    "blue_ribbon": 0,
+    "country_id": 1,
+    "state_id": 44,
+    "city_district_id": 250,
+    "city_id": 62,
+    "location_id": 0,
+    "establishment": 1997,
+    "boarding": "走读",
+    "gender": "混校",
+    "religion_id": 79,
+    "area": 45,
+    "tags": [{
+      "tag": "地理位置优越",
+      "description": "距离都会城市市中心（美国都会城市top20）2小时车程内"
+    }, {
+      "tag": "州内有知名大学",
+      "description": "州内有US NEWS排名top50综合类大学或排名top30文理学院"
+    }, {
+      "tag": "师资力量雄厚",
+      "description": "高级教师比例达到50%以上"
+    }, {
+      "tag": "AP课程丰富",
+      "description": "开设超过12门AP课程"
+    }, {
+      "tag": "艺术强校",
+      "description": "有较好的艺术传统，多次获得艺术奖项，或拥有独立艺术中心表演场地及艺术课程众多（如包含纯艺术、表演艺术等）"
+    }, {
+      "tag": "体育强校",
+      "description": "有较好的体育传统，多次获得体育奖项如州冠军，或体育项目及社团超过12个等"
+    }, {
+      "tag": "社团俱乐部众多",
+      "description": "各类社团及俱乐部超过20个"
+    }],
+    "race": "",
+    "near_airport": "休斯敦乔治·布什洲际机场",
+    "near_airport_drivingtime": 29,
+    "accommodation": "",
+    "enroll_grade": "9-11",
+    "grade": "9-12",
+    "grade_number": "",
+    "apply_grade": "",
+    "student_totals": 484,
+    "student_average": "17",
+    "teacher_ratio": "1:10",
+    "advance_ratio": 70,
+    "student_intl_ratio": 3,
+    "student_cn": 0,
+    "cn_notes": "休斯顿基督高中成立于1997年，是一所致力于学生道德品质培养，丰富精神生活和宣扬基督教理念的大学预备学校。学校鼓励年轻学子锻炼起领导力，培养信仰，提高知识能力并最终实现其理想。学校秉承荣誉，团结，传承和奖学金的理念，旨在通过道德决策体现其诚信的品质，促使学生在和谐，和睦和诚信的氛围中互相帮助，在心灵，思想和行动上追求基督教信仰的理想，并且在整个学习过程中提高知识技能",
+    "en_notes": "",
+    "cn_advantages": ["休斯顿基督高中是布什家族国际学生领导力（George and Barbara Bush Center for Scholars and Leaders）的所在地，该中心提供90年以上的知识和历史资料。参与者有机会体验乔治布什在位时的政策，立法等关键的领导力知识，以便将学生培养成新一代的领导者", "学校图书馆是德克萨斯州为数不多的几个订阅JStor的高中图书馆之一，JStor是一个备受赞誉的在线档案库，用于大学和大学的研究。此外该图书馆还订阅了各种各样的在线数据库，用于研究和信息需求", "学校教学设施先进，科技校园项目包括：打印机，相机，互动白板等", "学校提供杰出学者项目，国际学生领导力计划等特色项目", "学校提供Beyond these wall这个计划，使学生有机会通过教育和探险接触不同的国家和文化", "学校艺术实力强劲，并有机会面试可以进入秋季大秀和冬季音乐节", "学校课余活动丰富，有手语俱乐部、汉语俱乐部、机器人俱乐部等"],
+    "en_advantages": "",
+    "info": "",
+    "longitude": "-95.60304433527768",
+    "latitude": "29.825879945916448",
+    "google_longitude": "-95.56203519999997",
+    "google_latitude": "29.8206995",
+    "courses_ap": "25,26,29,30,31,32,33,34,35,41,62,127,163,166,167,168",
+    "courses_ib": "",
+    "courses_honor": "",
+    "courses_art": "931,932,940,943,945,979",
+    "courses_sport": "1270,1273,1274,1277,1279,1280,1281,1282,1283,1284,1285,1289,1290",
+    "clubs": {
+      "title": "俱乐部",
+      "totals": 13,
+      "courses": [{
+        "tag": "美国手语俱乐部",
+        "description": ""
+      }, {
+        "tag": "图书俱乐部",
+        "description": ""
+      }, {
+        "tag": "Comedy Sportz",
+        "description": ""
+      }, {
+        "tag": "时尚俱乐部",
+        "description": ""
+      }, {
+        "tag": "国际戏剧俱乐部",
+        "description": ""
+      }, {
+        "tag": "汉语俱乐部",
+        "description": ""
+      }, {
+        "tag": "数学俱乐部",
+        "description": ""
+      }, {
+        "tag": "模拟联合国",
+        "description": ""
+      }, {
+        "tag": "国际荣誉俱乐部",
+        "description": ""
+      }, {
+        "tag": "机器人俱乐部",
+        "description": ""
+      }, {
+        "tag": "攀岩",
+        "description": ""
+      }, {
+        "tag": "学生会",
+        "description": ""
+      }, {
+        "tag": "神学俱乐部",
+        "description": ""
+      }]
+    },
+    "sat": "1630/2400",
+    "sat_std": 0,
+    "institution_code": 0,
+    "toefl_code": 0,
+    "esl": 0,
+    "niche": "A",
+    "language": "",
+    "language_tips": "",
+    "enrollment_rate": 0,
+    "matriculation_record": "",
+    "requirements": "ISEE",
+    "online_application": 1,
+    "interview_type": "面试",
+    "application_fee": "--",
+    "tuition": "23,675",
+    "insurance_fee": "1,500",
+    "custody_fee": "29,000",
+    "total_fee": "54,175",
+    "sorting": 119,
+    "university_admitted": null,
+    "interview_time": "",
+    "enroll_send": "",
+    "i20_time": "",
+    "student_intl_num": 0,
+    "student_intl_num_left_real": 0,
+    "student_intl_num_left_show": 0,
+    "hot": 0,
+    "operator": 20,
+    "university": {
+      "type_1": [{
+        "cn_name": "普林斯顿大学",
+        "en_name": "Princeton University",
+        "introduction": "普林斯顿大学是世界著名私立研究型大学，位于美国新泽西州的普林斯顿市，是八所常春藤盟校之一。基督教教会曙光长老会于1746年在新泽西州伊丽莎白镇创立该校，是美国殖民时期第四所成立的高等教育学院，当时名为“新泽西学院”，1747年迁至新泽西州，1756年迁至风景优美的普林斯顿市（位于费城和纽约之间），并在1896正式改名为“普林斯顿大学”。",
+        "type": 1,
+        "rank": 1,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 1
+        }
+      }, {
+        "cn_name": " 麻省理工学院",
+        "en_name": "Massachusetts Institute of Technology",
+        "introduction": "麻省理工学院（Massachusetts Institute of Technology），简称麻省理工（MIT），坐落于美国马萨诸塞州波士顿都市区剑桥市，是世界著名私立研究型大学 。麻省理工学院创立于1861年，在第二次世界大战后，麻省理工学院借由美国国防科技研究需要而迅速崛起 ；在二战和冷战期间，麻省理工学院的研究人员对计算机、雷达以及惯性导航系统等科技发展作出了重要贡献。麻省理工学院素以顶尖的工程学和计算机科学而著名，拥有林肯实验室（MIT Lincoln Lab）和麻省理工学院媒体实验室（MIT Media Lab） ，位列2016-17年世界大学学术排名（ARWU）工程学世界第一、计算机科学第二 ，2017-18年US News全美研究生院排名工程学第一、计算机科学第一 ，与斯坦福大学、加州大学伯克利分校一同被称为工程科技界的学术领袖 。",
+        "type": 1,
+        "rank": 5,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 6
+        }
+      }, {
+        "cn_name": "约翰霍普金斯大学",
+        "en_name": "Johns Hopkins University",
+        "introduction": "约翰·霍普金斯大学（The Johns Hopkins University），简称Hopkins或JHU，成立于1876年，是一所世界顶级的著名私立大学，美国第一所研究型大学，也是北美顶尖大学学术联盟美国大学协会（AAU）的14所创始校之一。2016年美国国家科学基金会连续37年将该校列为全美科研经费开支最高的大学 。截止目前，学校的教员与职工共有37人获得过诺贝尔奖（世界第18）。2018USNews世界大学排名第10；2018年英国《泰晤士报》高等教育增刊将其列为世界第13，美国第9。",
+        "type": 1,
+        "rank": 11,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 12
+        }
+      }, {
+        "cn_name": " 西北大学",
+        "en_name": "Northwestern University",
+        "introduction": "西北大学（Northwestern University），简称NU，坐落于伊利伊州东北部城市埃文斯顿，是一所世界顶尖的私立研究型大学，是十大联盟（Big Ten Conference）创始成员和北美顶尖大学学术联盟美国大学协会（AAU）的成员之一 。西北大学由John Evans先生创办于1851年 ，其主校区位于伊利诺伊州埃文斯顿市郊的密歇根湖湖畔，临近著名的国际大都市芝加哥，其商学院、法学院和医学院位于繁华的芝加哥市区。西北大学以严格录取出名，其录取中国留学生录取率低于1%，尤其是录取中国本科生以及每年获得全额奖学金博士研究生录取的中国留学生。2018年，西北大学本科生整体录取率仅为8.4%，其中常规录取率为6.4% ，位列美国录取率最低的学校之一。",
+        "type": 1,
+        "rank": 11,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 13
+        }
+      }, {
+        "cn_name": "康奈尔大学",
+        "en_name": "Cornell University",
+        "introduction": "康奈尔大学（Cornell University）是一所位于美国纽约州伊萨卡的世界顶级私立研究型大学（另有两所分校位于纽约市和卡塔尔教育城），是著名的常春藤联盟成员。康奈尔大学由埃兹拉·康奈尔和安德鲁·迪克森·怀特于1865年建立，是八所常春藤名校中唯一创办于美国独立战争之后的新生力量，办学理念曾影响了整个美国高等教育，规模为当时全美高校之最。康奈尔大学的立校之本是任何人都有获得教育的平等权利，是常春藤盟校中第一所实行性别平等的男女合校大学，在招生录取上最早实行不计贵族身份，不分信仰和种族，并以创建学科齐全、包罗万象的新型综合性大学为建校宗旨，因而该校被誉为美国历史上第一所具有真正意义的全民大学。",
+        "type": 1,
+        "rank": 14,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 15
+        }
+      }, {
+        "cn_name": "莱斯大学",
+        "en_name": "Rice University",
+        "introduction": "莱斯大学（Rice University），简称Rice，位于美国得克萨斯州休斯敦市郊。为美国南方最高学府，美国大学协会（AAU）成员，是一所世界著名的私立研究型大学，”新常春藤“名校之一。1891年由德克萨斯州棉花巨富威廉·马歇尔·莱斯（William Marshall Rice）创建。 莱斯大学与其它三所位于美国南方的大学，北卡罗来纳州的杜克大学、田纳西州的范德堡大学和弗吉尼亚州的弗吉尼亚大学称为南方哈佛（The Harvard of the South）。",
+        "type": 1,
+        "rank": 14,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 16
+        }
+      }, {
+        "cn_name": "范德堡大学",
+        "en_name": "Vanderbilt University",
+        "introduction": "范德堡大学（Vanderbilt University），简称Vandy，又名范德比尔特大学，由美国铁路大亨科尼利尔斯·范德比尔特捐建，是位于美国田纳西州纳什维尔市的一所享誉世界的私立研究型大学。学校创立于1873年，是位于美国南方的顶级名校，也是世界一流大学之一，属于新常春藤盟校。作为美国最具影响力的私立大学之一，2018年范德堡大学位列US News全美大学综合排名第14位，仅次于杜克大学位居南方第2，以其出色的教育质量和较强的科研实力，享有“南方哈佛”（Harvard of the South）的美誉。",
+        "type": 1,
+        "rank": 14,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 17
+        }
+      }, {
+        "cn_name": "华盛顿大学圣路易斯分校",
+        "en_name": "Washington University in St. Louis",
+        "introduction": "华盛顿大学（圣路易斯）Washington University (St. Louis) ，简称华盛顿大学（Wash U，WU），该大学以美国国父乔治·华盛顿命名，始建于1853年2月22日。圣路易斯华盛顿大学位于美国密苏里州圣路易斯市，是美国历史上建校最早，也是最负盛名的“华盛顿大学。美国9所“新常春藤”名校之一，属世界一流大学。历史上共有25位诺贝尔奖得主在此学习或从事教学研究工作。圣路易斯华盛顿大学 分为四个校区：丹佛斯（Danforth Campus）校区、医学院校区、西校区、北校区和泰森研究中心。",
+        "type": 1,
+        "rank": 18,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 19
+        }
+      }, {
+        "cn_name": "埃默里大学",
+        "en_name": "Emory University",
+        "introduction": "埃默里大学（Emory University，建于1836年，全美顶尖的私立研究型大学，美国25所”新常春藤“院校之一，素有“南部哈佛”的美誉，是美国小班制本科精英教育的代表院校, 曾产出20名被誉为“全球本科诺贝尔奖”的罗德学者 。埃默里大学位于美国佐治亚州第一大城市亚特兰大，依靠国际商业大财团可口可乐的巨额资本，埃默里大学奠定了其世界级学术殿堂的地位。校园的大部分面积被森林覆盖，校园建筑为意大利古典风格，采用昂贵的大理石建成，仿佛置身美丽的南欧，体现着埃默里优雅的名门气质。",
+        "type": 1,
+        "rank": 21,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 21
+        }
+      }, {
+        "cn_name": " 南加州大学",
+        "en_name": "University of Southern California",
+        "introduction": "南加利福尼亚大学（University of Southern California），又译南加州大学，简称南加大（USC），是美国西海岸最古老的顶尖私立研究型大学，世界著名高等学府，位于美国加利福尼亚州洛杉矶市，1880年由监理会创立，是美国大学协会（AAU）成员、环太平洋大学联盟成员。南加大的众多学院均居全美前10。其中电影学院，新闻学院位列全美第1，公共政策学院位列全美第2，建筑学院本科和研究院分别位列全美第5和第9，工程学院位列全美第8，商学院本科和研究院分别列为全美第11和第18。学校在2018年U.S.News美国大学综合排名上位列第21位，华尔街日报/泰晤士高等教育美国大学排名上位列第15位。南加大2018年的本科录取率仅为13%，是全美本科入学竞争最激烈的大学之一。",
+        "type": 1,
+        "rank": 21,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 24
+        }
+      }, {
+        "cn_name": "弗吉尼亚大学",
+        "en_name": "University of Virginia",
+        "introduction": "弗吉尼亚大学（University of Virginia），简称UVa，又译维吉尼亚大学，是由美国第三任总统托马斯·杰斐逊于1819年创建的美国历史上首个独立于教会的高校，是美国最顶尖、世界最著名公立大学之一，在学术界享有盛誉。在2018 U.S.News中，排名全美第25名，世界第107名。在2019年QS世界大学排名位居第192位。弗吉尼亚大学为最初的8所“公立常春藤”成员之一，25所“新常春藤”成员之一，也是北美地区唯一被联合国教科文组织列为是世界遗产的高等院校",
+        "type": 1,
+        "rank": 25,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 26
+        }
+      }, {
+        "cn_name": " 维克森林大学",
+        "en_name": "Wake Forest University",
+        "introduction": "维克森林大学（Wake Forest University，又译作“维克弗里斯特大学”）建于1834年，是美国一所极富盛名的综合性研究大学。因小班制精英教学体制，维克森林也被称作“南哈佛”、“南方达特茅斯”。该校在中国内地地区相对美国其他前30名校知名度较小，原因主要在于该校对招收国际学生相当严格，申请该校，学生需要递交5篇左右的命题作文，所以维克森林也是全美前30名校中国际学生人数最少的学校。维克森林大学坐落于美国北卡罗莱纳州历史名城温莎（Winston-Salem），距美国东南部地区最重要的金融、贸易和交通运输中心夏洛特市约一小时车程。",
+        "type": 1,
+        "rank": 27,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 27
+        }
+      }, {
+        "cn_name": " 密歇根大学安娜堡分校",
+        "en_name": "University of Michigan--Ann Arbor",
+        "introduction": "密歇根大学安娜堡分校（University of Michigan, Ann Arbor），也译作密西根大学安娜堡分校。它是密歇根大学的旗舰校区，因此通常“密歇根大学”就能代指“密歇根大学安娜堡分校”。是位于美国密歇根州的一所世界著名公立大学，于1817年建校，是美国历史最悠久的大学之一，在世界范围内享有盛誉",
+        "type": 1,
+        "rank": 28,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 28
+        }
+      }, {
+        "cn_name": " 纽约大学",
+        "en_name": "New York University",
+        "introduction": "纽约大学（New York University）简称“NYU”，是一所位于纽约的世界著名私立综合性研究型大学，成立于1831年。纽约大学由18个学院和研究所组成，已经成为全美国境内规模最大的私立非营利高等教育机构之一，同时也是美国唯一一座位于纽约心脏地带的私立名校。",
+        "type": 1,
+        "rank": 30,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 30
+        }
+      }, {
+        "cn_name": "波士顿大学",
+        "en_name": "Boston University",
+        "introduction": "波士顿大学（Boston University)，简称BU，创办于1839年，是历史悠久的世界顶尖研究型大学，同时也是全美第三大私立大学，其主校区位于波士顿市中心查尔斯河河畔，与哈佛大学、麻省理工学院隔河相对，医学院校区则设在波士顿市区南边的长木医学区。",
+        "type": 1,
+        "rank": 37,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 37
+        }
+      }, {
+        "cn_name": " 杜兰大学",
+        "en_name": "Tulane University",
+        "introduction": "成立于1834年的杜兰大学（Tulane University），位于美国南部路易斯安那州（Louisiana）国际著名商业港口及南部文化名城新奥尔良市（New Orleans），是美国一所历史悠久的著名私立研究型大学，为北美大学联盟（AAU：北美62所研究型大学联盟，包括美国60所，加拿大2所）成员。USNEWS“2013年进步最快大学的报告”中排名第12位。",
+        "type": 1,
+        "rank": 40,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 41
+        }
+      }, {
+        "cn_name": "伦斯勒理工学院",
+        "en_name": "Rensselaer Polytechnic Institute",
+        "introduction": "伦斯勒理工学院,英文名Rensselaer Polytechnic Institute，简称RPI，为全美顶尖理工大学，美国东部高等学府，位于美国纽约州首府奥尔巴尼附近的特洛伊（Troy），距离纽约267公里（166英里），离波士顿275公里（172英里）。该校由当时的美国首富，纽约州副总督斯蒂芬·万·伦斯勒先生于1824年创办，是美国，乃至英语系国家历史上第一所理工科大学，也是美国25所“新常春藤盟校”之一。",
+        "type": 1,
+        "rank": 42,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 42
+        }
+      }, {
+        "cn_name": "迈阿密大学",
+        "en_name": "University of Miami",
+        "introduction": "迈阿密大学（University of Miami），简称UM或UMiami，位于美国佛罗里达州珊瑚阁，是一所始建于1925年的美国顶尖私立综合大学，尤以商学院、法学院知名，其培养出许多商政首脑，如伯利兹总理、秘鲁商务部部长，参议院成员、众议院成员、多位市长、多位大法官。2016年美国总统候选人Marco Rubio也为迈阿密大学法学院的毕业生之一。",
+        "type": 1,
+        "rank": 46,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 49
+        }
+      }, {
+        "cn_name": "宾州州立大学",
+        "en_name": "Pennsylvania State University--University Park",
+        "introduction": "宾夕法尼亚州立大学（The Pennsylvania State University，简称Penn State，缩写PSU），创建于1855年，坐落于美国宾夕法尼亚州斯泰特科利奇（State College），是一所享誉世界的顶尖研究型大学。该校是美国国家一级大学，“十大联盟（B1G）”成员，“美国大学协会（AAU）”成员，“世界大学联盟（WUN）”成员。该校被誉为“公立常春藤”，在美国公立大学中排名稳居前十，与加州大学伯克利分校、加州大学洛杉矶分校和密歇根大学安娜堡分校等代表了美国公立大学的最高水平。",
+        "type": 1,
+        "rank": 52,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 52
+        }
+      }],
+      "type_2": [{
+        "cn_name": "科尔盖特大学",
+        "en_name": "Colgate University",
+        "introduction": "科尔盖特大学，始建于1819年，是美国著名的私立文理学院，爱国者联盟盟校之一，位于纽约州的汉密尔顿市，它的校园风景非常漂亮，美国最美丽的五所大学之一。科尔盖特大学以文科著称，在美国文理学院排名中，科尔盖特大学名列第12名。在Students Review美国留学最热门50所大学中排第25位。1997年为纪念郭远宁先生诞辰，新建的郭远宁楼群，被设为学校主校区。",
+        "type": 2,
+        "rank": 12,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 113
+        }
+      }, {
+        "cn_name": "卫斯理安大学",
+        "en_name": "Wesleyan University",
+        "introduction": "维思大学（Wesleyan University）, 又译卫斯理大学、卫斯廉大学或卫斯理安大学，位于美国康涅狄格州的米德尔敦。于1831年由米德尔顿的卫理公会派教徒所建立，其名称是来自于建立者约翰·卫斯理，但目前该校与卫理公会派无任何联系。但由于美国许多大学由卫斯理来命名，为了加以区分，校长迈克尔·罗斯听取了校友、教职员工和学生的建议，2017年宣布学校的中文官方名为维思大学。“维”代表着支持、维护和联结；“思”意味着思考与反思。",
+        "type": 2,
+        "rank": 21,
+        "pivot": {
+          "school_id": 119,
+          "university_id": 122
+        }
+      }]
+    },
+    "isFavorite": false,
+    "detail_url": "http://m.beanhome.com/school.html?id=119",
+    "subtitle2": "私立/走读",
+    "subtitle": "9-12年级 SAT均值1630/2400",
+    "RMB": "352,137",
+    "attribution": [{
+      "field": "Niche",
+      "value": "A"
+    }, {
+      "field": "年级",
+      "value": "9-12"
+    }, {
+      "field": "办学性质",
+      "value": "私立"
+    }, {
+      "field": "类型",
+      "value": "混校"
+    }, {
+      "field": "制度",
+      "value": "走读"
+    }, {
+      "field": "学生数",
+      "value": 484
+    }, {
+      "field": "师生比",
+      "value": "1:10"
+    }, {
+      "field": "高级教师",
+      "value": "70%"
+    }, {
+      "field": "国际学生",
+      "value": "3%"
+    }, {
+      "field": "中国学生",
+      "value": "NA"
+    }],
+    "course_ap": {
+      "title": "AP课程",
+      "totals": 16,
+      "courses": [{
+        "tag": "生物",
+        "description": ""
+      }, {
+        "tag": "化学",
+        "description": ""
+      }, {
+        "tag": "微积分AB",
+        "description": ""
+      }, {
+        "tag": "微积分BC",
+        "description": ""
+      }, {
+        "tag": "统计学",
+        "description": ""
+      }, {
+        "tag": "英语文学与写作",
+        "description": ""
+      }, {
+        "tag": "英语语言与写作",
+        "description": ""
+      }, {
+        "tag": "欧洲历史",
+        "description": ""
+      }, {
+        "tag": "世界历史",
+        "description": ""
+      }, {
+        "tag": "美国历史",
+        "description": ""
+      }, {
+        "tag": "计算机科学A",
+        "description": ""
+      }, {
+        "tag": "美国政府与政治",
+        "description": ""
+      }, {
+        "tag": "工作室艺术",
+        "description": ""
+      }, {
+        "tag": "西班牙语言文学",
+        "description": ""
+      }, {
+        "tag": "物理C:电学和电磁学",
+        "description": ""
+      }, {
+        "tag": "2D设计",
+        "description": ""
+      }]
+    },
+    "course_sport": {
+      "title": "体育课程",
+      "totals": 13,
+      "courses": [{
+        "tag": "越野",
+        "description": ""
+      }, {
+        "tag": "篮球",
+        "description": ""
+      }, {
+        "tag": "足球",
+        "description": ""
+      }, {
+        "tag": "棒球",
+        "description": ""
+      }, {
+        "tag": "长曲棍球",
+        "description": ""
+      }, {
+        "tag": "游泳",
+        "description": ""
+      }, {
+        "tag": "网球",
+        "description": ""
+      }, {
+        "tag": "排球",
+        "description": ""
+      }, {
+        "tag": "垒球",
+        "description": ""
+      }, {
+        "tag": "啦啦队",
+        "description": ""
+      }, {
+        "tag": "田径",
+        "description": ""
+      }, {
+        "tag": "高尔夫",
+        "description": ""
+      }, {
+        "tag": "曲棍球",
+        "description": ""
+      }]
+    },
+    "course_honor": {
+      "title": "Honor课程",
+      "totals": 0,
+      "courses": []
+    },
+    "course_ib": {
+      "title": "IB课程",
+      "totals": 0,
+      "courses": []
+    },
+    "course_art": {
+      "title": "艺术课程",
+      "totals": 6,
+      "courses": [{
+        "tag": "乐队",
+        "description": ""
+      }, {
+        "tag": "戏剧",
+        "description": ""
+      }, {
+        "tag": "合唱团",
+        "description": ""
+      }, {
+        "tag": "舞蹈",
+        "description": ""
+      }, {
+        "tag": "管弦乐",
+        "description": ""
+      }, {
+        "tag": "视觉艺术",
+        "description": ""
+      }]
+    },
+    "state_name": "德克萨斯州",
+    "city_district_name": "德克萨斯大区",
+    "location": "city",
+    "city_district": 250,
+    "city_name": "休斯顿",
+    "notes": "休斯顿基督高中成立于1997年，是一所致力于学生道德品质培养，丰富精神生活和宣扬基督教理念的大学预备学校。学校鼓励年轻学子锻炼起领导力，培养信仰，提高知识能力并最终实现其理想。学校秉承荣誉，团结，传承和奖学金的理念，旨在通过道德决策体现其诚信的品质，促使学生在和谐，和睦和诚信的氛围中互相帮助，在心灵，思想和行动上追求基督教信仰的理想，并且在整个学习过程中提高知识技能",
+    "updated": "2018-08-16",
+    "religion": null
+  }
+}

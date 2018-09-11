@@ -6,8 +6,8 @@
       <li :class="['itemli', {active: showactive==3 ? true : false}]" @click="tabnavFun(3)">城市介绍</li>
     </ul>
     <first-menu :dataList="datalist" v-show="showactive==1 ? true : false"></first-menu>
-    <second-menu :dataList="datalist" v-show="showactive==2 ? true : false"></second-menu>
-    <third-menu :dataList="datalist" v-show="showactive==3 ? true : false"></third-menu>
+    <second-menu v-show="showactive==2 ? true : false"></second-menu>
+    <third-menu v-show="showactive==3 ? true : false"></third-menu>
   </div>
 </template>
 

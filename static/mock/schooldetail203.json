@@ -1,0 +1,615 @@
+{
+  "data": {
+    "id": 203,
+    "number": "",
+    "en_name": "Portsmouth Christian Academy",
+    "cn_name": "朴茨茅斯基督教学院",
+    "website": "www.pcaschool.org",
+    "address": "20 Seaborne Drive, Dover, NH 03820",
+    "thumbnail": "http://pic.beanhomestay.com/photos/school/203/2018/adbe2b6717341e6fc1f9aea2505223c6.jpg",
+    "type": 1,
+    "thumbnail_pc": "http://pic.beanhomestay.com/photos/school/203/2018/adbe2b6717341e6fc1f9aea2505223c6.jpg",
+    "photos": [{
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/adbe2b6717341e6fc1f9aea2505223c6.jpg",
+      "title": "俯瞰图",
+      "id": 3246
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/d86b1efc326170d0c2d7caa149aaadb5.JPG",
+      "title": "教学楼",
+      "id": 3247
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/5430985a1a59285c2c447fb7897634f3.JPG",
+      "title": "会议室",
+      "id": 3258
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/2539ae3c37fa3179adbf0506a103088c.JPG",
+      "title": "图书馆",
+      "id": 3259
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/11cb92ec07d62b99f60b93d69586e668.JPG",
+      "title": "室内体育馆",
+      "id": 3260
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/defc9f47ca9a2d020a7e713df90003d2.JPG",
+      "title": "计算机室",
+      "id": 3261
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/6badf69ebe45ff5ac22f11b9865eb5b6.JPG",
+      "title": "艺术室",
+      "id": 3262
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/9646d778caeb5951214d066ce8deabdf.JPG",
+      "title": "毕业走向",
+      "id": 3263
+    }, {
+      "path": "http://pic.beanhomestay.com/photos/school/203/2018/17533c961539b8e6e1b975b30a7f259d.jpg",
+      "title": "学生活动",
+      "id": 3264
+    }],
+    "blue_ribbon": 0,
+    "country_id": 1,
+    "state_id": 30,
+    "city_district_id": 249,
+    "city_id": 274,
+    "location_id": 0,
+    "establishment": 1979,
+    "boarding": "走读",
+    "gender": "混校",
+    "religion_id": 79,
+    "area": 50,
+    "tags": [{
+      "tag": "地理位置优越",
+      "description": "距离都会城市市中心（美国都会城市top20）2小时车程内"
+    }, {
+      "tag": "州内有知名大学",
+      "description": "州内有US NEWS排名top50综合类大学或排名top30文理学院"
+    }, {
+      "tag": "小班教学",
+      "description": "师生比在1比8及以内，能充分互动保证教学效果"
+    }, {
+      "tag": "师资力量雄厚",
+      "description": "高级教师比例达到50%以上"
+    }, {
+      "tag": "AP课程丰富",
+      "description": "开设超过12门AP课程"
+    }, {
+      "tag": "STEM强校",
+      "description": "拥有STEM课程，注重学生创客思维的培养"
+    }, {
+      "tag": "体育强校",
+      "description": "有较好的体育传统，多次获得体育奖项如州冠军，或体育项目及社团超过12个等"
+    }],
+    "race": "",
+    "near_airport": "朴茨茅斯国际机场",
+    "near_airport_drivingtime": 15,
+    "accommodation": "",
+    "enroll_grade": "9-11",
+    "grade": "K-12",
+    "grade_number": "",
+    "apply_grade": "",
+    "student_totals": 550,
+    "student_average": "17",
+    "teacher_ratio": "1:9",
+    "advance_ratio": 75,
+    "student_intl_ratio": 18,
+    "student_cn": 21,
+    "cn_notes": "学校成立于1979年，成立之初叫Bethel Christian Academy，后在1992年改名为Portsmouth Christian Academy，开设学前-12年级，共有550人，其中高中生有204人，提供完善的学术和优秀的大学预备高中项目。学校占地50英亩，与贝拉米河相邻，风景优美。每年95%以上的学生都进入了4年制的大学，学校注重培养学生的学术和社交能力，还重视对学生社会责任感，全球化意识，批判性思维和公众演讲能力的培养",
+    "en_notes": "",
+    "cn_advantages": ["学校师资强，有75%的高等学位老师，其中有18%是博士学位。此外老师不仅仅关心学生的学业，也会注重对学生生活和性格的培养", "学校提供近40门AP和荣誉课程，平均每年AP考试通过率为80%以上，此外学校还提供大学学分课程", "学校不仅为国际生提供ELL语言课程，全面提高学生听说读写能力，还为11&12年级提供SAT和ACT相关课程，并且提供详细的升学辅导", "学校体育项目比较强，其中篮球，棒球和田径都多次获得州冠军", "学校开设了14门声乐和管弦乐相关的课程，学生经常参加当地的弦乐节，并参加国家的音乐类等级考试", "学校提供STEM项目，通过课堂学习理论知识和课外实验的方式进行教学", "学校对学生关怀度高，会让老师帮学生选课，确保学生选课在未来大学申请有竞争力，此外还会有定期的学术报告", "学校认为国外学习对学生了解一个地方的文化是一个非常重要的机会，每年都会带学生访问美国大学，或者去欧洲或者加拿大等国家学习他们的文化"],
+    "en_advantages": "",
+    "info": "",
+    "longitude": "-70.89373992772593",
+    "latitude": "43.161948599111604",
+    "google_longitude": "-70.85582729999999",
+    "google_latitude": "43.1596007",
+    "courses_ap": "25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40",
+    "courses_ib": "",
+    "courses_honor": "411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429",
+    "courses_art": "932,933,934,940,945,949,955,980,1006,1022,1023",
+    "courses_sport": "1270,1273,1274,1277,1281,1282,1283,1285,1327",
+    "clubs": {
+      "title": "俱乐部",
+      "totals": 11,
+      "courses": [{
+        "tag": "研讨队",
+        "description": ""
+      }, {
+        "tag": "象棋俱乐部",
+        "description": ""
+      }, {
+        "tag": "智力杯",
+        "description": ""
+      }, {
+        "tag": "国际俱乐部",
+        "description": ""
+      }, {
+        "tag": "数学队",
+        "description": ""
+      }, {
+        "tag": "学生会",
+        "description": ""
+      }, {
+        "tag": "圣经学习和早上灵修",
+        "description": ""
+      }, {
+        "tag": "科技俱乐部",
+        "description": ""
+      }, {
+        "tag": "健身俱乐部",
+        "description": ""
+      }, {
+        "tag": "年鉴",
+        "description": ""
+      }, {
+        "tag": "咖啡屋",
+        "description": ""
+      }]
+    },
+    "sat": "1260/2400",
+    "sat_std": 0,
+    "institution_code": 0,
+    "toefl_code": 0,
+    "esl": 1,
+    "niche": "A",
+    "language": "",
+    "language_tips": "",
+    "enrollment_rate": 0,
+    "matriculation_record": "",
+    "requirements": "TOEFL/iTEP",
+    "online_application": 1,
+    "interview_type": "面试",
+    "application_fee": "250",
+    "tuition": "26,600",
+    "insurance_fee": "1,500",
+    "custody_fee": "29,000",
+    "total_fee": "57,100",
+    "sorting": 0,
+    "university_admitted": null,
+    "interview_time": "",
+    "enroll_send": "",
+    "i20_time": "",
+    "student_intl_num": 0,
+    "student_intl_num_left_real": 0,
+    "student_intl_num_left_show": 0,
+    "hot": 0,
+    "operator": 16,
+    "university": {
+      "type_1": [{
+        "cn_name": " 芝加哥大学",
+        "en_name": "University of Chicago",
+        "introduction": "芝加哥大学（The University of Chicago），简称“芝大”（UChicago），位于美国国际金融中心芝加哥，是世界著名私立研究型大学、常年位列各个大学排行榜世界前十。芝加哥大学1890年由石油大王约翰·洛克菲勒创办，素以盛产诺贝尔奖得主而闻名。截至2017年，共有97位诺贝尔奖得主在芝大工作或学习过，位列世界第四。",
+        "type": 1,
+        "rank": 3,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 3
+        }
+      }, {
+        "cn_name": "哥伦比亚大学",
+        "en_name": "Columbia University",
+        "introduction": "哥伦比亚大学（Columbia University），正式名称为纽约市哥伦比亚大学（Columbia University in the City of New York），简称为哥大。八大常春藤盟校之一，是一所位于美国纽约曼哈顿的世界顶级的私立研究型大学，于1754年根据英国国王乔治二世颁布的《国王宪章》而成立，最初名为国王学院，1896年正式更名为哥伦比亚大学（1784-1896为哥伦比亚学院）并迁到目前所在的晨边高地(Morningside Heights)校园 ，是美国大学协会创始成员。哥大是美国历史最悠久的五所大学之一，也是培养诺贝尔奖获得者最多的大学之一。",
+        "type": 1,
+        "rank": 5,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 5
+        }
+      }, {
+        "cn_name": "达特茅斯学院",
+        "en_name": "Dartmouth College",
+        "introduction": "达特茅斯学院（Dartmouth College）成立于1769年，是美国历史最悠久的世界顶尖学府，也是闻名遐迩的私立八大常春藤联盟之一。坐落于新罕布什尔州的汉诺佛(Hanover)小镇。依照利扎维洛克牧师当初成立这个学校的目的，是为了培养当地印第安部落的年轻人和年轻白人。其本科生入学竞争非常激烈，本科生入学率仅为10.3% 。和同样是常春藤联盟之一的布朗大学一样，该校最大的特征之一就是小而精。在当今大学人数不断增长的环境下，达特茅斯学院保持着严格的招生制度，和极高的入学门槛，师生比约为1：7 ，堪称小型优质私立研究型大学。",
+        "type": 1,
+        "rank": 11,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 11
+        }
+      }, {
+        "cn_name": "约翰霍普金斯大学",
+        "en_name": "Johns Hopkins University",
+        "introduction": "约翰·霍普金斯大学（The Johns Hopkins University），简称Hopkins或JHU，成立于1876年，是一所世界顶级的著名私立大学，美国第一所研究型大学，也是北美顶尖大学学术联盟美国大学协会（AAU）的14所创始校之一。2016年美国国家科学基金会连续37年将该校列为全美科研经费开支最高的大学 。截止目前，学校的教员与职工共有37人获得过诺贝尔奖（世界第18）。2018USNews世界大学排名第10；2018年英国《泰晤士报》高等教育增刊将其列为世界第13，美国第9。",
+        "type": 1,
+        "rank": 11,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 12
+        }
+      }, {
+        "cn_name": "布朗大学",
+        "en_name": "Brown University",
+        "introduction": "布朗大学（Brown University）是一所世界著名的顶级私立研究型大学，全美第七古老的大学，遐迩闻名的常春藤联盟成员校之一，1764年创建之初，学校的校名叫做罗德岛学院，坐落在美国罗德岛州的首府普罗维登斯市。布朗大学入学竞争极为激烈，本科生录取率仅为9%，是全美录取难度最高的大学之一。该校最大特征之一即为“小而精”，在当今大学人数不断增长的环境下，布朗大学依旧保持着严格的招生制度和极高的入学门槛，师生比约为1：7，堪称小型顶尖私立研究型大学，本科生6,182人，研究生仅1,974人，全职教师736人，但在如此之少的教师队伍中，就有七位诺贝尔奖得主，还有1位校友也曾获得诺贝尔奖。",
+        "type": 1,
+        "rank": 14,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 14
+        }
+      }, {
+        "cn_name": "康奈尔大学",
+        "en_name": "Cornell University",
+        "introduction": "康奈尔大学（Cornell University）是一所位于美国纽约州伊萨卡的世界顶级私立研究型大学（另有两所分校位于纽约市和卡塔尔教育城），是著名的常春藤联盟成员。康奈尔大学由埃兹拉·康奈尔和安德鲁·迪克森·怀特于1865年建立，是八所常春藤名校中唯一创办于美国独立战争之后的新生力量，办学理念曾影响了整个美国高等教育，规模为当时全美高校之最。康奈尔大学的立校之本是任何人都有获得教育的平等权利，是常春藤盟校中第一所实行性别平等的男女合校大学，在招生录取上最早实行不计贵族身份，不分信仰和种族，并以创建学科齐全、包罗万象的新型综合性大学为建校宗旨，因而该校被誉为美国历史上第一所具有真正意义的全民大学。",
+        "type": 1,
+        "rank": 14,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 15
+        }
+      }, {
+        "cn_name": "卡内基梅隆大学",
+        "en_name": "Carnegie Mellon University",
+        "introduction": "美国卡耐基梅隆大学（Carnegie Mellon University），简称CMU，坐落在美国宾夕法尼亚州的匹兹堡(Pittsburgh)，是一所拥有13,600名在校学生和1,423名教职及科研人员的世界著名学府。该校拥有享誉全球的计算机学院和戏剧学院，其艺术学院，商学院，工程院以及公共管理学院等也都在全美名列前茅。CMU由工业家兼慈善家安德鲁·卡耐基于1900年创建，当时名为卡内基技术学校，1912年改名为卡耐基梅隆大学，开始向以研究为主的美国重点大学转变。",
+        "type": 1,
+        "rank": 25,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 25
+        }
+      }, {
+        "cn_name": " 密歇根大学安娜堡分校",
+        "en_name": "University of Michigan--Ann Arbor",
+        "introduction": "密歇根大学安娜堡分校（University of Michigan, Ann Arbor），也译作密西根大学安娜堡分校。它是密歇根大学的旗舰校区，因此通常“密歇根大学”就能代指“密歇根大学安娜堡分校”。是位于美国密歇根州的一所世界著名公立大学，于1817年建校，是美国历史最悠久的大学之一，在世界范围内享有盛誉",
+        "type": 1,
+        "rank": 28,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 28
+        }
+      }, {
+        "cn_name": " 纽约大学",
+        "en_name": "New York University",
+        "introduction": "纽约大学（New York University）简称“NYU”，是一所位于纽约的世界著名私立综合性研究型大学，成立于1831年。纽约大学由18个学院和研究所组成，已经成为全美国境内规模最大的私立非营利高等教育机构之一，同时也是美国唯一一座位于纽约心脏地带的私立名校。",
+        "type": 1,
+        "rank": 30,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 30
+        }
+      }, {
+        "cn_name": " 波士顿学院",
+        "en_name": "Boston College",
+        "introduction": "波士顿学院（Boston College，简称BC）成立于1863年，是一所顶级私立研究型大学 [1] , 为波士顿五大名校（哈佛大学、麻省理工学院、塔夫茨大学、波士顿学院、布兰迪斯大学）之一。BC历史悠久，在美国享有声望，素有耶稣会常春藤之称 [2] ，同时也是全美25所”新常春藤“名校。",
+        "type": 1,
+        "rank": 32,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 32
+        }
+      }, {
+        "cn_name": " 威廉玛丽学院",
+        "en_name": "College of William and Mary",
+        "introduction": "威廉与玛丽学院（College of William & Mary，简称WM），又名威廉玛丽学院，创立于1693年，是全美历史第二悠久的高等院校，建校时间仅次于1636年建立的哈佛大学。威廉玛丽学院得名于英国国王威廉三世和玛丽二世，是一所有着“美国母校”美誉的一流高等学府，以精英教育著称，自美国建国以来一直享有非常高的名望。该校的硬件和软件环境都属一流，更是公立常春藤名校之一。",
+        "type": 1,
+        "rank": 32,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 33
+        }
+      }, {
+        "cn_name": "布兰迪斯大学",
+        "en_name": "Brandeis University",
+        "introduction": "布兰迪斯大学（Brandeis University，简称Brandeis） [1] 是一所位于美国马萨诸塞州波士顿地区沃尔瑟姆镇的私立顶尖研究型大学，成立于1948年，建校至今60余年已享有极高声誉，素有“犹太哈佛”（Jewish Harvard）之美称，被誉为“全美最年轻的主要研究院大学”。",
+        "type": 1,
+        "rank": 34,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 34
+        }
+      }, {
+        "cn_name": "佐治亚理工学院",
+        "en_name": "Georgia Institute of Technology",
+        "introduction": "佐治亚理工学院（Georgia Institute of Technology），简称Georgia Tech，也被简称为Gatech或GT，建校于1885年，是坐落于美国东南部第一大城市亚特兰大的世界顶尖研究型大学。",
+        "type": 1,
+        "rank": 34,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 35
+        }
+      }, {
+        "cn_name": "凯斯西储大学",
+        "en_name": "Case Western Reserve University",
+        "introduction": "凯斯西储大学（Case Western Reserve University），世界著名高等学府，简称CWRU，位于俄亥俄州的克里夫兰，是一所以独立研究闻名的世界顶级私立大学，美国一级国家级大学，同时凯斯西储大学也是美国大学协会（The Association of American Universities，简称AAU）的62所顶尖研究型大学中较早期的成员之一，在北美乃至世界范围都享有相当高的名望。凯斯西储大学的历史可追溯到1826年：由凯斯理工学院（1880年，由慈善家伦纳德·凯斯创立）及西储大学（1826年，创办于康涅狄格西部储备区）两校于1967年合并而成。凯斯西储大学历来以极度严谨的学风，极度严苛的课程和杰出闻名的研究闻名，是俄亥俄州名副其实的第一学府。该校的诺贝尔奖得主有17位之多，美国第一位本土诺贝尔奖获得者也出自该校（1907年诺贝尔物理学奖）。",
+        "type": 1,
+        "rank": 37,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 38
+        }
+      }, {
+        "cn_name": "波士顿大学",
+        "en_name": "Boston University",
+        "introduction": "波士顿大学（Boston University)，简称BU，创办于1839年，是历史悠久的世界顶尖研究型大学，同时也是全美第三大私立大学，其主校区位于波士顿市中心查尔斯河河畔，与哈佛大学、麻省理工学院隔河相对，医学院校区则设在波士顿市区南边的长木医学区。",
+        "type": 1,
+        "rank": 37,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 37
+        }
+      }, {
+        "cn_name": " 杜兰大学",
+        "en_name": "Tulane University",
+        "introduction": "成立于1834年的杜兰大学（Tulane University），位于美国南部路易斯安那州（Louisiana）国际著名商业港口及南部文化名城新奥尔良市（New Orleans），是美国一所历史悠久的著名私立研究型大学，为北美大学联盟（AAU：北美62所研究型大学联盟，包括美国60所，加拿大2所）成员。USNEWS“2013年进步最快大学的报告”中排名第12位。",
+        "type": 1,
+        "rank": 40,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 41
+        }
+      }, {
+        "cn_name": "伦斯勒理工学院",
+        "en_name": "Rensselaer Polytechnic Institute",
+        "introduction": "伦斯勒理工学院,英文名Rensselaer Polytechnic Institute，简称RPI，为全美顶尖理工大学，美国东部高等学府，位于美国纽约州首府奥尔巴尼附近的特洛伊（Troy），距离纽约267公里（166英里），离波士顿275公里（172英里）。该校由当时的美国首富，纽约州副总督斯蒂芬·万·伦斯勒先生于1824年创办，是美国，乃至英语系国家历史上第一所理工科大学，也是美国25所“新常春藤盟校”之一。",
+        "type": 1,
+        "rank": 42,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 42
+        }
+      }, {
+        "cn_name": "宾州州立大学",
+        "en_name": "Pennsylvania State University--University Park",
+        "introduction": "宾夕法尼亚州立大学（The Pennsylvania State University，简称Penn State，缩写PSU），创建于1855年，坐落于美国宾夕法尼亚州斯泰特科利奇（State College），是一所享誉世界的顶尖研究型大学。该校是美国国家一级大学，“十大联盟（B1G）”成员，“美国大学协会（AAU）”成员，“世界大学联盟（WUN）”成员。该校被誉为“公立常春藤”，在美国公立大学中排名稳居前十，与加州大学伯克利分校、加州大学洛杉矶分校和密歇根大学安娜堡分校等代表了美国公立大学的最高水平。",
+        "type": 1,
+        "rank": 52,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 52
+        }
+      }, {
+        "cn_name": " 俄亥俄州立大学",
+        "en_name": "Ohio State University--Columbus",
+        "introduction": "俄亥俄州立大学（The Ohio State University），简称OSU，创建于1870年，坐落于美国俄亥俄州首府哥伦布市（Columbus），是世界著名研究型大学，国际顶尖的研究型大学联盟Universitas 21成员之一，北美州顶级的学术联盟美国大学协会（AAU）最早加入（1916年）的成员之一及十大联盟成员。是北美五大湖地区最顶尖的公立大学之一，被誉为“公立常春藤（Public Ivy）”。大学主校区占地面积65㎞²，是全美面积最大的校园之一。",
+        "type": 1,
+        "rank": 54,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 54
+        }
+      }],
+      "type_2": [{
+        "cn_name": "拉法耶特学院",
+        "en_name": "Lafayette College",
+        "introduction": "拉法耶特学院(Lafayette College)是美国一所著名的文理学院，是爱国者联盟院校之一 [1-3] 。拉法耶特学院建立于1826年，以当年备受尊敬的拉法耶特将军命名。拉法耶特学院在校学生共计2406人",
+        "type": 2,
+        "rank": 36,
+        "pivot": {
+          "school_id": 203,
+          "university_id": 136
+        }
+      }]
+    },
+    "isFavorite": false,
+    "detail_url": "http://m.beanhome.com/school.html?id=203",
+    "subtitle2": "私立/走读",
+    "subtitle": "K-12年级 SAT均值1260/2400",
+    "RMB": "371,150",
+    "attribution": [{
+      "field": "Niche",
+      "value": "A"
+    }, {
+      "field": "年级",
+      "value": "K-12"
+    }, {
+      "field": "办学性质",
+      "value": "私立"
+    }, {
+      "field": "类型",
+      "value": "混校"
+    }, {
+      "field": "制度",
+      "value": "走读"
+    }, {
+      "field": "学生数",
+      "value": 550
+    }, {
+      "field": "师生比",
+      "value": "1:9"
+    }, {
+      "field": "高级教师",
+      "value": "75%"
+    }, {
+      "field": "国际学生",
+      "value": "18%"
+    }, {
+      "field": "中国学生",
+      "value": 21
+    }],
+    "course_ap": {
+      "title": "AP课程",
+      "totals": 16,
+      "courses": [{
+        "tag": "生物",
+        "description": ""
+      }, {
+        "tag": "化学",
+        "description": ""
+      }, {
+        "tag": "物理",
+        "description": ""
+      }, {
+        "tag": "心理学",
+        "description": ""
+      }, {
+        "tag": "微积分AB",
+        "description": ""
+      }, {
+        "tag": "微积分BC",
+        "description": ""
+      }, {
+        "tag": "统计学",
+        "description": ""
+      }, {
+        "tag": "英语文学与写作",
+        "description": ""
+      }, {
+        "tag": "英语语言与写作",
+        "description": ""
+      }, {
+        "tag": "欧洲历史",
+        "description": ""
+      }, {
+        "tag": "世界历史",
+        "description": ""
+      }, {
+        "tag": "法语",
+        "description": ""
+      }, {
+        "tag": "西班牙语",
+        "description": ""
+      }, {
+        "tag": "乐理",
+        "description": ""
+      }, {
+        "tag": "艺术史",
+        "description": ""
+      }, {
+        "tag": "艺术工作室",
+        "description": ""
+      }]
+    },
+    "course_sport": {
+      "title": "体育课程",
+      "totals": 9,
+      "courses": [{
+        "tag": "越野",
+        "description": ""
+      }, {
+        "tag": "篮球",
+        "description": ""
+      }, {
+        "tag": "足球",
+        "description": ""
+      }, {
+        "tag": "棒球",
+        "description": ""
+      }, {
+        "tag": "网球",
+        "description": ""
+      }, {
+        "tag": "排球",
+        "description": ""
+      }, {
+        "tag": "垒球",
+        "description": ""
+      }, {
+        "tag": "田径",
+        "description": ""
+      }, {
+        "tag": "体操",
+        "description": ""
+      }]
+    },
+    "course_honor": {
+      "title": "Honor课程",
+      "totals": 19,
+      "courses": [{
+        "tag": "生物",
+        "description": ""
+      }, {
+        "tag": "化学",
+        "description": ""
+      }, {
+        "tag": "代数1",
+        "description": ""
+      }, {
+        "tag": "代数2",
+        "description": ""
+      }, {
+        "tag": "几何",
+        "description": ""
+      }, {
+        "tag": "预备微积分",
+        "description": ""
+      }, {
+        "tag": "微积分写作分析",
+        "description": ""
+      }, {
+        "tag": "美国文学",
+        "description": ""
+      }, {
+        "tag": "文学巨著",
+        "description": ""
+      }, {
+        "tag": "世界历史",
+        "description": ""
+      }, {
+        "tag": "美国历史",
+        "description": ""
+      }, {
+        "tag": "二战史",
+        "description": ""
+      }, {
+        "tag": "冷战史",
+        "description": ""
+      }, {
+        "tag": "欧洲历史",
+        "description": ""
+      }, {
+        "tag": "法语3",
+        "description": ""
+      }, {
+        "tag": "西班牙语3",
+        "description": ""
+      }, {
+        "tag": "系统神学",
+        "description": ""
+      }, {
+        "tag": "新约圣经",
+        "description": ""
+      }, {
+        "tag": "旧约圣经",
+        "description": ""
+      }]
+    },
+    "course_ib": {
+      "title": "IB课程",
+      "totals": 0,
+      "courses": []
+    },
+    "course_art": {
+      "title": "艺术课程",
+      "totals": 11,
+      "courses": [{
+        "tag": "戏剧",
+        "description": ""
+      }, {
+        "tag": "吉他",
+        "description": ""
+      }, {
+        "tag": "摄影",
+        "description": ""
+      }, {
+        "tag": "合唱团",
+        "description": ""
+      }, {
+        "tag": "管弦乐",
+        "description": ""
+      }, {
+        "tag": "绘画",
+        "description": ""
+      }, {
+        "tag": "打击乐",
+        "description": ""
+      }, {
+        "tag": "声乐",
+        "description": ""
+      }, {
+        "tag": "版画",
+        "description": ""
+      }, {
+        "tag": "设计",
+        "description": ""
+      }, {
+        "tag": "钢琴",
+        "description": ""
+      }]
+    },
+    "state_name": "新罕布什尔州",
+    "city_district_name": "马萨诸塞大区",
+    "location": "city",
+    "city_district": 249,
+    "city_name": "多弗",
+    "notes": "学校成立于1979年，成立之初叫Bethel Christian Academy，后在1992年改名为Portsmouth Christian Academy，开设学前-12年级，共有550人，其中高中生有204人，提供完善的学术和优秀的大学预备高中项目。学校占地50英亩，与贝拉米河相邻，风景优美。每年95%以上的学生都进入了4年制的大学，学校注重培养学生的学术和社交能力，还重视对学生社会责任感，全球化意识，批判性思维和公众演讲能力的培养",
+    "updated": "2018-08-23",
+    "religion": null
+  }
+}
