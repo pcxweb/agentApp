@@ -2,7 +2,8 @@
   <div class="first-menu">
     <div class="brief item">
       <h2>学校介绍</h2>
-      <p class="article">{{dataList.cn_notes}}</p>
+      <p :class="['article', {presMes: birefshow}]">{{dataList.cn_notes}}</p>
+      <div v-show="birefshow" class="showmore" @click="showmorefun(1)">展开</div>
     </div>
     <div class="item special">
       <h2>学校特色</h2>
@@ -74,49 +75,82 @@
         <li v-for="(list, ids) of items.courses" :key="ids" class="scourseli">{{list.tag}}</li>
       </ul>
     </div>
-    <div class="item university1">
+    <div class="item university">
       <div class="top">
         <div><span class="iconfont icon-zonghe"></span>大学综合录取走向</div>
         <div class="rank">排名</div>
       </div>
-      <div class="un-item" v-for="(item, index) of university1" :key="index">
-        <div class="unname-item">
-          <h3>{{item.cn_name}}</h3>
-          <p>{{item.en_name}}</p>
+      <div :class="{maxHeight: university1show}">
+        <div class="un-item" v-for="(item, index) of university1" :key="index">
+          <div class="unname-item">
+            <h3>{{item.cn_name}}</h3>
+            <p>{{item.en_name}}</p>
+          </div>
+          <div class="rank-item">{{item.rank}}</div>
         </div>
-        <div class="rank-item">{{item.rank}}</div>
       </div>
+      <div v-show="university1show" class="showmore" @click="showmorefun(2)">展开</div>
     </div>
-    <div class="item university1">
+    <div class="item university">
       <div class="top">
         <div><span class="iconfont icon-sort"></span>大学文理录取走向</div>
         <div class="rank">排名</div>
       </div>
-      <div class="un-item" v-for="(item, index) of university2" :key="index">
-        <div class="unname-item">
-          <h3>{{item.cn_name}}</h3>
-          <p>{{item.en_name}}</p>
+      <div :class="{maxHeight: university2show}">
+        <div class="un-item" v-for="(item, index) of university2" :key="index">
+          <div class="unname-item">
+            <h3>{{item.cn_name}}</h3>
+            <p>{{item.en_name}}</p>
+          </div>
+          <div class="rank-item">{{item.rank}}</div>
         </div>
-        <div class="rank-item">{{item.rank}}</div>
       </div>
+      <div v-show="university2show" class="showmore" @click="showmorefun(3)">展开</div>
     </div>
     <div class="item photo">
       <h2>学校照片</h2>
       <div class="photo-wrapper">
-        <div class="photo-item" v-for="item of photos" :key="item.id">
+        <div class="photo-item" @click="handleGllary" v-for="item of photos" :key="item.id">
           <div class="p-img"><img :src="item.path+'?x-oss-process=image/resize,m_fill,w_335,h_200'" alt=""></div>
           <p class="p-title">{{item.title}}</p>
         </div>
       </div>
     </div>
+    <common-gallary :photoslist="photos" v-show="gallaryshow" @close="handleGllary"></common-gallary>
   </div>
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 export default {
   name: 'FirstMenu',
   props: {
     dataList: Object
+  },
+  components: {
+    CommonGallary
+  },
+  data () {
+    return {
+      birefshow: true,
+      university1show: true,
+      university2show: true,
+      gallaryshow: false
+    }
+  },
+  methods: {
+    showmorefun (res) {
+      if (res === 1) {
+        this.birefshow = false
+      } else if (res === 2) {
+        this.university1show = false
+      } else {
+        this.university2show = false
+      }
+    },
+    handleGllary () {
+      this.gallaryshow = !this.gallaryshow
+    }
   },
   computed: {
     isEsl () {
@@ -182,11 +216,18 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/commonsty.styl'
 @import '~styles/samecolor.styl'
+.maxHeight
+  max-height: 3.2rem
+  overflow: hidden
+.presMes
+  max-height: 1.2rem
+  overflow: hidden
 .first-menu
   .item
-    background-color: #fff;
+    background-color: #fff
     margin-bottom: 0.24rem
     padding:0.2rem 0.24rem
+    position: relative
     h2
     .top
       font-size: 0.34rem
@@ -198,6 +239,18 @@ export default {
       line-height: .4rem;
       overflow: hidden;
       margin-bottom: 0.24rem
+    .showmore
+      width: 100%
+      height: .5rem
+      line-height: .5rem
+      position: absolute
+      left: 0
+      color: $maincolor
+      font-size: .28rem
+      text-align: center
+      box-shadow: -0.05rem -0.15rem 0.2rem #fff
+      bottom: 0rem
+      background-color: #fff
   .dotul
     clearfloat()
     li
@@ -280,7 +333,7 @@ export default {
       ellipsis()
       color: $morecolor
       margin-bottom: 0.2rem
-  .university1
+  .university
     .top
     .un-item
       display: flex
