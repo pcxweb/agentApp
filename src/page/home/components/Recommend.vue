@@ -6,7 +6,7 @@
     </div>
     <swiper :options="swiperOption">
       <swiper-slide v-for="item of recommendlist" :key="item.id">
-        <div class="re-banner">
+        <router-link tag='div' :to="'/stay/' + item.id" class="re-banner">
           <div class="re-img">
             <img class="img-con" :src="item.imgUrl" alt="">
             <span class="img-address"><span class="iconfont icon-map"></span>{{item.imgaddress}}</span>
@@ -21,7 +21,7 @@
               <div class="money">{{item.money}}</div>
             </div>
           </div>
-        </div>
+        </router-link>
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
