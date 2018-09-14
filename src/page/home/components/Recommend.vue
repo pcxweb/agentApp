@@ -6,7 +6,7 @@
     </div>
     <swiper :options="swiperOption">
       <swiper-slide v-for="item of recommendlist" :key="item.id">
-        <router-link tag='div' :to="'/stay/' + item.id" class="re-banner">
+        <div class="re-banner" @click="handleSdetail(item.num, item.id)">
           <div class="re-img">
             <img class="img-con" :src="item.imgUrl" alt="">
             <span class="img-address"><span class="iconfont icon-map"></span>{{item.imgaddress}}</span>
@@ -21,7 +21,7 @@
               <div class="money">{{item.money}}</div>
             </div>
           </div>
-        </router-link>
+        </div>
       </swiper-slide>
       <div class="swiper-pagination"  slot="pagination"></div>
     </swiper>
@@ -29,6 +29,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 export default {
   name: 'HomeRecommend',
   props: {
@@ -42,6 +43,16 @@ export default {
         autoplay: 6000
       }
     }
+  },
+  methods: {
+    handleSdetail (ids, cityid) {
+      this.changeStayId(ids)
+      this.changeCityId(cityid)
+      console.log(cityid)
+      this.$router.push('/stay/' + ids)
+    },
+    ...mapMutations(['changeStayId']),
+    ...mapMutations(['changeCityId'])
   }
 }
 </script>

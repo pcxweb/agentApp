@@ -7,11 +7,12 @@
     </ul>
     <first-menu :dataList="datalist" v-show="showactive==1 ? true : false"></first-menu>
     <second-menu v-show="showactive==2 ? true : false"></second-menu>
-    <third-menu v-show="showactive==3 ? true : false"></third-menu>
+    <third-menu :datalist="citylist" v-show="showactive==3 ? true : false"></third-menu>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
 import FirstMenu from './FirstMenu'
 import SecondMenu from 'common/detail/RecommendLive'
 import ThirdMenu from 'common/detail/CityInfo'
@@ -22,7 +23,8 @@ export default {
   },
   data () {
     return {
-      showactive: 1
+      showactive: 1,
+      citylist: {}
     }
   },
   components: {
@@ -33,7 +35,21 @@ export default {
   methods: {
     tabnavFun (num) {
       this.showactive = num
+    },
+    getcityDetail () {
+      axios.get('http://api.beanhome.com/citys/250?type=city')
+        .then(this.getcityDetailSucc)
+    },
+    getcityDetailSucc (res) {
+      console.log(res)
+      const datas = res.data
+      if (res.status === 200 && datas) {
+        this.citylist = datas
+      }
     }
+  },
+  mounted () {
+    this.getcityDetail()
   }
 }
 </script>

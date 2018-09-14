@@ -46,6 +46,8 @@ export default {
   .gallary >>> .swiper-container
     width: 100%
     overflow: visible
+  .gallary >>> .swiper-wrapper
+    align-items: center
   .gallary
     display: flex
     width: 100%

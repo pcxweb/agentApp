@@ -51,7 +51,8 @@
       "address": "加利福尼亚大区"
     }],
     "recommendlist": [{
-      "id": "001",
+      "id": "246",
+      "num": 7,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/19.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "纽约大区",
       "title": "纽约大区学区 双亲家庭的独栋别墅",
@@ -59,7 +60,8 @@
       "dastance": "距 Rutgers Prep 0miles",
       "money": "$ 15,500/年"
     },{
-      "id": "002",
+      "id": "247",
+      "num": 7,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/7.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "加利福尼亚大区",
       "title": "加利福尼亚大区学区 双亲家庭的独栋别墅",
@@ -67,7 +69,8 @@
       "dastance": "距 San Joaquin Memorial High School 10miles",
       "money": "$ 19,000/年"
     },{
-      "id": "003",
+      "id": "248",
+      "num": 1,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/1.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "加利福尼亚大区",
       "title": "加利福尼亚大区学区 独栋别墅",
@@ -75,7 +78,8 @@
       "dastance": "距 Bergen County Christian Academy 0miles",
       "money": "$ 15,000/年"
     },{
-      "id": "004",
+      "id": "249",
+      "num": 2,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/2.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "加利福尼亚大区",
       "title": "加利福尼亚大区学区 双亲家庭的独栋别墅",
@@ -83,7 +87,8 @@
       "dastance": "距 California Lutheran 0miles",
       "money": "$ 15,000/年"
     },{
-      "id": "005",
+      "id": "253",
+      "num": 19,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/29.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "加利福尼亚大区",
       "title": "加利福尼亚大区学区 独栋别墅",
@@ -91,7 +96,8 @@
       "dastance": "距 Maranatha 0miles",
       "money": "$ 15,000/年"
     },{
-      "id": "006",
+      "id": "254",
+      "num": 1,
       "imgUrl": "http://pic.beanhomestay.com/photos/home_ywmd/19.jpg?x-oss-process=image/crop,w_750,h_340,g_center",
       "imgaddress": "纽约大区",
       "title": "纽约大区学区 双亲家庭的独栋别墅",

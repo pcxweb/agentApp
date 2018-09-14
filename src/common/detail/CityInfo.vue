@@ -52,26 +52,19 @@
 
 <script>
 import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
   name: 'CityInfo',
   data () {
     return {
-      datalist: {},
       birefshow: true,
       cityData: []
     }
   },
+  props: {
+    datalist: Object
+  },
   methods: {
-    getschoolDetail () {
-      axios.get('http://api.beanhome.com/citys/250?type=city')
-        .then(this.getschoolDetailSucc)
-    },
-    getschoolDetailSucc (res) {
-      const datas = res.data
-      if (res.status === 200 && datas) {
-        this.datalist = datas
-      }
-    },
     getCityDetail () {
       axios.get('http://api.beanhome.com/schools/119/citys/250/recommend')
         .then(this.getCityDetailSucc)
@@ -94,7 +87,8 @@ export default {
       } else {
         return '有'
       }
-    }
+    },
+    ...mapState(['cityId', 'schoolId'])
   },
   filters: {
     division (value, num) {
@@ -103,7 +97,6 @@ export default {
     }
   },
   mounted () {
-    this.getschoolDetail()
     this.getCityDetail()
   }
 }

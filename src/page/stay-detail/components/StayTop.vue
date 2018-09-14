@@ -6,13 +6,14 @@
       </router-link>
       住家详情
     </div>
-    <div class="bannerBox">
+    <div class="bannerBox" @click="handleGllary">
       <swiper :options="swiperOption">
         <swiper-slide v-for="item of datalist.photos" :key="item.id">
           <img class="banner-img" :src="item.path" alt="">
         </swiper-slide>
       </swiper>
     </div>
+    <common-gallary :photoslist="datalist.photos" v-show="gallaryshow" @close="handleGllary"></common-gallary>
     <div class="baseInfo">
       <div class="title">{{datalist.city_name}}学区  {{datalist.parents_type}}家庭的 {{datalist.house_type}}</div>
       <div class="star">
@@ -27,21 +28,29 @@
 </template>
 
 <script>
+import CommonGallary from 'common/gallary/Gallary'
 import CommonStar from 'common/star/star'
 export default {
   name: 'StayTop',
   components: {
-    CommonStar
+    CommonStar,
+    CommonGallary
   },
   data () {
     return {
       swiperOption: {
         loop: true
-      }
+      },
+      gallaryshow: false
     }
   },
   props: {
     datalist: Object
+  },
+  methods: {
+    handleGllary () {
+      this.gallaryshow = !this.gallaryshow
+    }
   }
 }
 </script>

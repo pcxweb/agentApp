@@ -8,6 +8,7 @@
 
 <script>
 import axios from 'axios'
+import { mapState } from 'vuex'
 import StayTop from './components/StayTop'
 import StayMenu from './components/StayMenu'
 import ComFooter from 'common/footer/Footer'
@@ -15,7 +16,8 @@ export default {
   name: 'StayDetail',
   data () {
     return {
-      stayFlist: {}
+      stayFlist: {},
+      stayid: ''
     }
   },
   components: {
@@ -23,9 +25,12 @@ export default {
     StayMenu,
     ComFooter
   },
+  computed: {
+    ...mapState(['stayId', 'cityId'])
+  },
   methods: {
     getStayfun () {
-      axios.get('http://api.beanhome.com/homestays/1')
+      axios.get('http://api.beanhome.com/homestays/' + this.$route.params.id)
         .then(this.getStaysucc)
     },
     getStaysucc (res) {
@@ -34,7 +39,14 @@ export default {
     }
   },
   mounted () {
+    this.stayid = this.stayId
     this.getStayfun()
+  },
+  activated () {
+    if (this.stayid !== this.stayId) {
+      this.stayid = this.stayId
+      this.getStayfun()
+    }
   }
 }
 </script>

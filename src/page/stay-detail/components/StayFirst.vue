@@ -76,9 +76,11 @@ export default {
   computed: {
     infrastructure () {
       let arr = []
-      let str = this.datalist.community_infrastructure
-      arr = str.split(',')
-      return arr
+      if (this.datalist.community_infrastructure) {
+        let str = this.datalist.community_infrastructure
+        arr = str.split(',')
+        return arr
+      }
     }
   }
 }
