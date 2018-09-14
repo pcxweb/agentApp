@@ -1,12 +1,14 @@
 <template>
   <div class="staybox">
     <stay-top :datalist="stayFlist"></stay-top>
+    <stay-menu :datalist="stayFlist"></stay-menu>
   </div>
 </template>
 
 <script>
 import axios from 'axios'
 import StayTop from './components/StayTop'
+import StayMenu from './components/StayMenu'
 export default {
   name: 'StayDetail',
   data () {
@@ -15,7 +17,8 @@ export default {
     }
   },
   components: {
-    StayTop
+    StayTop,
+    StayMenu
   },
   methods: {
     getStayfun () {
