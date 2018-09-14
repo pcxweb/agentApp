@@ -31,6 +31,7 @@ export default {
   background-color: #fff
   align-items: center
   position: fixed
+  box-shadow: 0 0 0.2rem 0 rgba(0,0,0,.1);
   z-index: 2
   bottom: 0
   left: 0

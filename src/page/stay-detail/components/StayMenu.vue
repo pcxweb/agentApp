@@ -13,8 +13,8 @@
 
 <script>
 import StayFirst from './StayFirst'
-import StaySecond from './StaySecond'
-import StayThird from './StayThird'
+import StaySecond from 'common/detail/RecommendLive'
+import StayThird from 'common/detail/CityInfo'
 export default {
   name: 'StayMenu',
   data () {

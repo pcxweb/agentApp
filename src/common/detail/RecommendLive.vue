@@ -1,5 +1,5 @@
 <template>
-  <div class="second-box">
+  <div class="recommend-live">
     <div class="re-banner">
       <div class="re-img">
         <img class="img-con" src="http://pic.beanhomestay.com/photos/homestay133/2018/i3oq6b9kOVs2BqM1Ot4NUAAeMPvyUlRy5CCT4ks5.png?x-oss-process=image/resize,m_fill,w_690,h_340" alt="">
@@ -20,14 +20,14 @@
 
 <script>
 export default {
-  name: 'StaySecond'
+  name: 'RecommendLive'
 }
 </script>
 
 <style lang="stylus" scoped>
 @import '~styles/samecolor.styl'
 @import '~styles/commonsty.styl'
-.second-box
+.recommend-live
   background-color: #fff
   padding-bottom: 0.1rem
   .title

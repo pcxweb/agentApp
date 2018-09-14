@@ -13,8 +13,8 @@
 
 <script>
 import FirstMenu from './FirstMenu'
-import SecondMenu from './SecondMenu'
-import ThirdMenu from './ThirdMenu'
+import SecondMenu from 'common/detail/RecommendLive'
+import ThirdMenu from 'common/detail/CityInfo'
 export default {
   name: 'SdetailMenu',
   props: {

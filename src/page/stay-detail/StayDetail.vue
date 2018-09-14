@@ -2,6 +2,7 @@
   <div class="staybox">
     <stay-top :datalist="stayFlist"></stay-top>
     <stay-menu :datalist="stayFlist"></stay-menu>
+    <com-footer></com-footer>
   </div>
 </template>
 
@@ -9,6 +10,7 @@
 import axios from 'axios'
 import StayTop from './components/StayTop'
 import StayMenu from './components/StayMenu'
+import ComFooter from 'common/footer/Footer'
 export default {
   name: 'StayDetail',
   data () {
@@ -18,7 +20,8 @@ export default {
   },
   components: {
     StayTop,
-    StayMenu
+    StayMenu,
+    ComFooter
   },
   methods: {
     getStayfun () {
