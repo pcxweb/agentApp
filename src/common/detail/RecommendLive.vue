@@ -1,17 +1,17 @@
 <template>
   <div class="recommend-live">
-    <div class="re-banner">
+    <div class="re-banner" v-for="(item, index) of recomData" :key="index">
       <div class="re-img">
-        <img class="img-con" src="http://pic.beanhomestay.com/photos/homestay133/2018/i3oq6b9kOVs2BqM1Ot4NUAAeMPvyUlRy5CCT4ks5.png?x-oss-process=image/resize,m_fill,w_690,h_340" alt="">
+        <img class="img-con" :src="item.thumbnail + '?x-oss-process=image/resize,m_fill,w_690,h_340'" alt="">
       </div>
       <div class="re-con">
         <div class="re-desc">
-          <h2>布兰诺市学区 欧洲裔双亲家庭的独栋别墅</h2>
-          <p>房东 银行职员</p>
+          <h2>{{item.title}}</h2>
+          <p>房东 {{item.sub_title}}</p>
         </div>
         <div class="re-remark">
-          <div class="dastance">距 Westbury Christian School 0miles</div>
-          <div class="money">$--/年</div>
+          <div class="dastance">距 {{item.near_school_name}} {{item.near_school}}miles</div>
+          <div class="money">${{item.price}}/年</div>
         </div>
       </div>
     </div>
@@ -19,8 +19,33 @@
 </template>
 
 <script>
+import axios from 'axios'
+import { mapState } from 'vuex'
 export default {
-  name: 'RecommendLive'
+  name: 'RecommendLive',
+  data () {
+    return {
+      stayids: '',
+      cityids: '',
+      recomData: []
+    }
+  },
+  computed: {
+    ...mapState(['stayId', 'cityId'])
+  },
+  methods: {
+    getrecommendfun () {
+      axios.get('http://api.beanhome.com/homestays/1/citys/246/recommend')
+        .then(this.getrecommendsucc)
+    },
+    getrecommendsucc (res) {
+      console.log(res)
+      this.recomData = res.data.data
+    }
+  },
+  mounted () {
+    this.getrecommendfun()
+  }
 }
 </script>
 
@@ -28,7 +53,6 @@ export default {
 @import '~styles/samecolor.styl'
 @import '~styles/commonsty.styl'
 .recommend-live
-  background-color: #fff
   padding-bottom: 0.1rem
   .title
     display: flex
@@ -49,13 +73,21 @@ export default {
         vertical-align: middle
   .re-banner
     width: 100%
+    margin-bottom:0.5rem
+    background-color: #fff
     .re-img
       position: relative
       width: 100%
       height: 0
+      padding-left:0.24rem
+      padding-right:0.24rem
+      padding-top:0.24rem
       padding-bottom: 45%
+      overflow: hidden
+      box-sizing: border-box
       .img-con
         width: 100%
+        border-radius: 5px
     .re-con
       padding:0.24rem
       .re-desc

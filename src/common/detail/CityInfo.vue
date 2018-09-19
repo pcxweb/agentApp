@@ -58,7 +58,9 @@ export default {
   data () {
     return {
       birefshow: true,
-      cityData: []
+      cityData: [],
+      cityIds: '',
+      schoolIds: ''
     }
   },
   props: {
@@ -66,7 +68,7 @@ export default {
   },
   methods: {
     getCityDetail () {
-      axios.get('http://api.beanhome.com/schools/119/citys/250/recommend')
+      axios.get('http://api.beanhome.com/schools/' + this.schoolIds + '/citys/' + this.cityIds + '/recommend')
         .then(this.getCityDetailSucc)
     },
     getCityDetailSucc (res) {
@@ -97,7 +99,16 @@ export default {
     }
   },
   mounted () {
+    this.cityIds = this.cityId
+    this.schoolIds = this.schoolId
     this.getCityDetail()
+  },
+  activated () {
+    if (this.cityIds !== this.cityId || this.schoolIds !== this.schoolId) {
+      this.cityIds = this.cityId
+      this.schoolIds = this.schoolId
+      this.getCityDetail()
+    }
   }
 }
 </script>

@@ -12,8 +12,6 @@
 </template>
 
 <script>
-import axios from 'axios'
-import { mapState } from 'vuex'
 import StayFirst from './StayFirst'
 import StaySecond from 'common/detail/RecommendLive'
 import StayThird from 'common/detail/CityInfo'
@@ -21,38 +19,22 @@ export default {
   name: 'StayMenu',
   data () {
     return {
-      showactive: 1,
-      citylist: {}
+      showactive: 1
     }
   },
   props: {
-    datalist: Object
+    datalist: Object,
+    citylist: Object
   },
   components: {
     StayFirst,
     StaySecond,
     StayThird
   },
-  computed: {
-    ...mapState(['cityId'])
-  },
   methods: {
     tabnavFun (num) {
       this.showactive = num
-    },
-    getcityDetail () {
-      axios.get('http://api.beanhome.com/citys/' + this.cityId + '?type=city')
-        .then(this.getcityDetailSucc)
-    },
-    getcityDetailSucc (res) {
-      const datas = res.data
-      if (res.status === 200 && datas) {
-        this.citylist = datas
-      }
     }
-  },
-  mounted () {
-    this.getcityDetail()
   }
 }
 </script>

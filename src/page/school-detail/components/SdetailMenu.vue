@@ -13,6 +13,7 @@
 
 <script>
 import axios from 'axios'
+import { mapState } from 'vuex'
 import FirstMenu from './FirstMenu'
 import SecondMenu from 'common/detail/RecommendLive'
 import ThirdMenu from 'common/detail/CityInfo'
@@ -24,8 +25,12 @@ export default {
   data () {
     return {
       showactive: 1,
-      citylist: {}
+      citylist: {},
+      cityids: ''
     }
+  },
+  computed: {
+    ...mapState(['cityId'])
   },
   components: {
     FirstMenu,
@@ -37,7 +42,7 @@ export default {
       this.showactive = num
     },
     getcityDetail () {
-      axios.get('http://api.beanhome.com/citys/250?type=city')
+      axios.get('http://api.beanhome.com/citys/' + this.cityids + '?type=city')
         .then(this.getcityDetailSucc)
     },
     getcityDetailSucc (res) {
@@ -49,7 +54,14 @@ export default {
     }
   },
   mounted () {
+    this.cityids = this.cityId
     this.getcityDetail()
+  },
+  activated () {
+    if (this.cityids !== this.cityId) {
+      this.cityids = this.cityId
+      this.getcityDetail()
+    }
   }
 }
 </script>

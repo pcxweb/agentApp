@@ -19,8 +19,8 @@
       <div class="star">
         <div class="address"><span class="iconfont icon-map"></span><span>{{datalist.city_name}}学区</span></div>
         <div class="star-item">
-          <div><span>生活环境</span><common-star :num="6"></common-star></div>
-          <div><span>生活成本</span><common-star :num="9"></common-star></div>
+          <div><span>生活环境</span><common-star :num="dataCitylist.environment"></common-star></div>
+          <div><span>生活成本</span><common-star :num="dataCitylist.cost"></common-star></div>
         </div>
       </div>
     </div>
@@ -45,7 +45,8 @@ export default {
     }
   },
   props: {
-    datalist: Object
+    datalist: Object,
+    dataCitylist: Object
   },
   methods: {
     handleGllary () {

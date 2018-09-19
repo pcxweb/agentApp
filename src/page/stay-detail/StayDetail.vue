@@ -1,7 +1,7 @@
 <template>
   <div class="staybox">
-    <stay-top :datalist="stayFlist"></stay-top>
-    <stay-menu :datalist="stayFlist"></stay-menu>
+    <stay-top :datalist="stayFlist" :dataCitylist="cityInfo"></stay-top>
+    <stay-menu :datalist="stayFlist" :citylist="cityInfo"></stay-menu>
     <com-footer></com-footer>
   </div>
 </template>
@@ -17,7 +17,9 @@ export default {
   data () {
     return {
       stayFlist: {},
-      stayid: ''
+      stayid: '',
+      cityInfo: {},
+      cityIds: ''
     }
   },
   components: {
@@ -34,18 +36,32 @@ export default {
         .then(this.getStaysucc)
     },
     getStaysucc (res) {
-      console.log(res)
+      // console.log(res)
       this.stayFlist = res.data.data
+    },
+    getCityfun () {
+      axios.get('http://api.beanhome.com/citys/' + this.cityIds + '?type=city')
+        .then(this.getCitysucc)
+    },
+    getCitysucc (res) {
+      console.log(res.data)
+      this.cityInfo = res.data
     }
   },
   mounted () {
     this.stayid = this.stayId
+    this.cityIds = this.cityId
     this.getStayfun()
+    this.getCityfun()
   },
   activated () {
     if (this.stayid !== this.stayId) {
       this.stayid = this.stayId
       this.getStayfun()
+    }
+    if (this.cityIds !== this.cityId) {
+      this.cityIds = this.cityId
+      this.getCityfun()
     }
   }
 }

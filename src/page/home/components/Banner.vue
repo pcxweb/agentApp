@@ -5,12 +5,12 @@
         <!-- slides -->
         <swiper-slide>
           <!-- <router-link to="/school/116"> -->
-            <img @click="handleSdetail(116)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
+            <img @click="handleSdetail(116, 248)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/132/2018/FJwJ28h15cQOCyHWBUBwadSt37HXF7qmjJ2uu9vY.png" alt="">
           <!-- </router-link> -->
         </swiper-slide>
         <swiper-slide>
           <!-- <router-link to="/school/119"> -->
-            <img @click="handleSdetail(119)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
+            <img @click="handleSdetail(119, 250)" class="banner-img" src="http://pic.beanhomestay.com/photos/recommend/131/2018/Cfx4ucRlBK1hb3yQ2lED87ahwMYHBTwVkmnlfqaK.png" alt="">
           <!-- </router-link> -->
         </swiper-slide>
         <!-- Optional controls -->
@@ -33,12 +33,13 @@ export default {
     }
   },
   methods: {
-    handleSdetail (ids) {
+    handleSdetail (ids, cityids) {
       // alert(1)
       this.changeSids(ids)
+      this.changeCityId(cityids)
       this.$router.push('/school/' + ids)
     },
-    ...mapMutations(['changeSids'])
+    ...mapMutations(['changeSids', 'changeCityId'])
   }
 }
 </script>
