@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/page/home/Home'
 import School from '@/page/school-detail/SchoolDetail'
 import Stay from '@/page/stay-detail/StayDetail'
+import searchstay from '@/page/find-stay/StaySearch'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/stay/:id',
       name: 'Stay',
       component: Stay
+    },
+    {
+      path: '/searchstay/',
+      name: 'searchstay',
+      component: searchstay
     }
   ]
 })

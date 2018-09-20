@@ -9,10 +9,10 @@
         <div class="iconbox"><span class="iconfont icon-school"></span></div>
         <p>找学校</p>
       </li>
-      <li class="item">
+      <router-link tag="li" to="/searchstay/" class="item">
         <div class="iconbox"><span class="iconfont icon-bed"></span></div>
         <p>找住家</p>
-      </li>
+      </router-link>
       <li class="item">
         <div class="iconbox"><span class="iconfont icon-fuwu"></span></div>
         <p>后续服务</p>
@@ -42,6 +42,7 @@ export default {
       flex-direction: column
       align-item: center
       text-align: center
+      cursor: pointer
       .iconbox
         text-align: center
         margin: 0.2rem 0

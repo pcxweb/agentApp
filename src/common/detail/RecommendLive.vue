@@ -15,6 +15,7 @@
         </div>
       </div>
     </div>
+    <div class="norecommed" v-show="recomData.length === 0">暂无推荐</div>
   </div>
 </template>
 
@@ -27,7 +28,13 @@ export default {
     return {
       stayids: '',
       cityids: '',
-      recomData: []
+      recomDatas: []
+    }
+  },
+  props: {
+    recomData: {
+      type: Array,
+      default: this.recomDatas
     }
   },
   computed: {
@@ -35,16 +42,25 @@ export default {
   },
   methods: {
     getrecommendfun () {
-      axios.get('http://api.beanhome.com/homestays/1/citys/246/recommend')
+      axios.get('http://api.beanhome.com/homestays/' + this.stayId + '/citys/' + this.cityId + '/recommend')
         .then(this.getrecommendsucc)
     },
     getrecommendsucc (res) {
       console.log(res)
-      this.recomData = res.data.data
+      this.recomDatas = res.data.data
     }
   },
   mounted () {
+    this.stayids = this.stayId
+    this.cityids = this.cityId
     this.getrecommendfun()
+  },
+  activated () {
+    if (this.stayids !== this.stayId || this.cityids !== this.cityId) {
+      this.stayids = this.stayId
+      this.cityids = this.cityId
+      this.getrecommendfun()
+    }
   }
 }
 </script>
@@ -109,4 +125,8 @@ export default {
           line-height: 0.3rem
         .money
           color: #ff9800
+  .norecommed
+    background-color: #fff
+    text-align: center
+    padding: 0.24rem
 </style>
