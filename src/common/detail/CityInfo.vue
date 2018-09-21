@@ -60,7 +60,7 @@ export default {
       birefshow: true,
       cityData: [],
       cityIds: '',
-      schoolIds: ''
+      stayIds: ''
     }
   },
   props: {
@@ -68,7 +68,7 @@ export default {
   },
   methods: {
     getCityDetail () {
-      axios.get('http://api.beanhome.com/schools/' + this.schoolIds + '/citys/' + this.cityIds + '/recommend')
+      axios.get('http://api.beanhome.com/schools/' + this.stayIds + '/citys/' + this.cityIds + '/recommend')
         .then(this.getCityDetailSucc)
     },
     getCityDetailSucc (res) {
@@ -90,7 +90,7 @@ export default {
         return '有'
       }
     },
-    ...mapState(['cityId', 'schoolId'])
+    ...mapState(['cityId', 'stayId'])
   },
   filters: {
     division (value, num) {
@@ -100,13 +100,13 @@ export default {
   },
   mounted () {
     this.cityIds = this.cityId
-    this.schoolIds = this.schoolId
+    this.stayIds = this.stayId
     this.getCityDetail()
   },
   activated () {
-    if (this.cityIds !== this.cityId || this.schoolIds !== this.schoolId) {
+    if (this.cityIds !== this.cityId || this.stayIds !== this.stayId) {
       this.cityIds = this.cityId
-      this.schoolIds = this.schoolId
+      this.stayIds = this.stayId
       this.getCityDetail()
     }
   }

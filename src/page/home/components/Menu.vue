@@ -1,14 +1,14 @@
 <template>
   <div class="MenuBox">
     <ul class="item-box">
-      <li class="item">
+      <router-link tag="li" to="/searchcity/" class="item">
         <div class="iconbox"><span class="iconfont icon-city"></span></div>
         <p>找城市</p>
-      </li>
-      <li class="item">
+      </router-link>
+      <router-link tag="li" to="/searchschool/" class="item">
         <div class="iconbox"><span class="iconfont icon-school"></span></div>
         <p>找学校</p>
-      </li>
+      </router-link>
       <router-link tag="li" to="/searchstay/" class="item">
         <div class="iconbox"><span class="iconfont icon-bed"></span></div>
         <p>找住家</p>

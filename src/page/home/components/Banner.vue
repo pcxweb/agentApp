@@ -35,11 +35,11 @@ export default {
   methods: {
     handleSdetail (ids, cityids) {
       // alert(1)
-      this.changeSids(ids)
+      this.changeStayId(ids)
       this.changeCityId(cityids)
       this.$router.push('/school/' + ids)
     },
-    ...mapMutations(['changeSids', 'changeCityId'])
+    ...mapMutations(['changeStayId', 'changeCityId'])
   }
 }
 </script>

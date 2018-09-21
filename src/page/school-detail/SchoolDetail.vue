@@ -27,7 +27,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['schoolId'])
+    ...mapState(['stayId'])
   },
   methods: {
     getschoolDetail () {
@@ -42,12 +42,12 @@ export default {
     }
   },
   mounted () {
-    this.idval = this.schoolId
+    this.idval = this.stayId
     this.getschoolDetail()
   },
   activated () {
-    if (this.idval !== this.schoolId) {
-      this.idval = this.schoolId
+    if (this.idval !== this.stayId) {
+      this.idval = this.stayId
       this.getschoolDetail()
     }
   }

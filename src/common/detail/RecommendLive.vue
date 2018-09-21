@@ -1,6 +1,6 @@
 <template>
   <div class="recommend-live">
-    <div class="re-banner" v-for="(item, index) of recomData" :key="index">
+    <div class="re-banner" v-for="(item, index) of recomlist" :key="index">
       <div class="re-img">
         <img class="img-con" :src="item.thumbnail + '?x-oss-process=image/resize,m_fill,w_690,h_340'" alt="">
       </div>
@@ -15,7 +15,7 @@
         </div>
       </div>
     </div>
-    <div class="norecommed" v-show="recomData.length === 0">暂无推荐</div>
+    <div class="norecommed" v-show="remleng">暂无推荐</div>
   </div>
 </template>
 
@@ -28,16 +28,34 @@ export default {
     return {
       stayids: '',
       cityids: '',
-      recomDatas: []
+      recomdatas: []
     }
   },
   props: {
-    recomData: {
+    recomdata: {
       type: Array,
-      default: this.recomDatas
+      default: function () {
+        return [0]
+      }
     }
   },
   computed: {
+    remleng () {
+      if (this.recomdata.length === 0 && this.recomdatas.length === 0) {
+        return true
+      } else if (this.recomdata[0] === 0 && this.recomdatas.length === 0) {
+        return true
+      } else {
+        return false
+      }
+    },
+    recomlist () {
+      if (this.recomdata[0] === 0) {
+        return this.recomdatas
+      } else {
+        return this.recomdata
+      }
+    },
     ...mapState(['stayId', 'cityId'])
   },
   methods: {
@@ -47,13 +65,15 @@ export default {
     },
     getrecommendsucc (res) {
       console.log(res)
-      this.recomDatas = res.data.data
+      this.recomdatas = res.data.data
     }
   },
   mounted () {
     this.stayids = this.stayId
     this.cityids = this.cityId
-    this.getrecommendfun()
+    if (this.recomdata[0] === 0) {
+      this.getrecommendfun()
+    }
   },
   activated () {
     if (this.stayids !== this.stayId || this.cityids !== this.cityId) {

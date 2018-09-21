@@ -8,11 +8,11 @@
     </div>
     <div class="keyword_list">
       <ul>
-        <li v-for="(item, index) of titledata" :key="index" @click="changekey(item.title)">{{item.title}}</li>
+        <li v-for="(item, index) of titledata" :class="{'active': num === index}" :key="index" @click="changekey(item.title, index)">{{item.title}}</li>
       </ul>
     </div>
-    <menu-list :recomData="recomData"></menu-list>
-    <loading></loading>
+    <menu-list :recomdata="recomData"></menu-list>
+    <!-- <loading></loading> -->
   </div>
 </template>
 
@@ -26,7 +26,8 @@ export default {
     return {
       titledata: [],
       recomData: [],
-      keywordval: ''
+      keywordval: '',
+      num: ''
     }
   },
   components: {
@@ -52,8 +53,9 @@ export default {
       const datas = res.data.data
       this.recomData = datas
     },
-    changekey (keyval) {
+    changekey (keyval, nums) {
       this.keywordval = keyval
+      this.num = nums
       this.getList()
     }
   },
@@ -71,6 +73,7 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~styles/samecolor.styl'
   .detail-top
     position: relative
     background: linear-gradient(bottom left,#FF6633,#FFCC33)
@@ -104,4 +107,7 @@ export default {
         background-color: #fff
         border-radius: 0.2rem
         margin-right: 0.2rem
+      .active
+        background-color: $maincolor
+        color: #fff
 </style>
