@@ -13,10 +13,10 @@
         <div class="iconbox"><span class="iconfont icon-bed"></span></div>
         <p>找住家</p>
       </router-link>
-      <li class="item">
+      <router-link tag="li" to="/service/" class="item">
         <div class="iconbox"><span class="iconfont icon-fuwu"></span></div>
         <p>后续服务</p>
-      </li>
+      </router-link>
     </ul>
   </div>
 </template>
