@@ -29,11 +29,21 @@ export default {
   props: {
     showval: Boolean
   },
+  methods: {
+    handleScroll (ele) {
+      // var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+      var scrollTop = ele.scrollTop
+      console.log(scrollTop)
+    }
+  },
   mounted () {
-    // var ele = this.$ref.conbox
+    var ele = this.$refs.conbox
+    ele.addEventListener('scroll', this.handleScroll(ele))
+    // console.log(ele)
     // setTimeout(() => {
-    //   ele.scrollTop = ele.scrollHeight
-    // }, 3400)
+    //   alert(ele.scrollHeight)
+    //   window.scrollTop = ele.scrollHeight
+    // }, 5000)
   }
 }
 </script>
