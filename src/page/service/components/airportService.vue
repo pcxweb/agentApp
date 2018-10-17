@@ -150,6 +150,9 @@ export default {
         this.$refs.arrivaldate.innerHTML = '2018-09-10  22:40'
         this.airsave = true
       }, 1500)
+    },
+    airsave: function () {
+      this.$emit('airsavefun', true)
     }
   }
 }
@@ -164,6 +167,7 @@ export default {
   top:0
   bottom:0
   right:0
+  background-color: #fff
   .title
     position: relative
     height: 0.8rem

@@ -19,7 +19,7 @@
         <div v-show="showval" class="item animated" :key="3"><img src="http://res.beanhomestay.com/static/m/service/img/steward3.jpg" alt=""></div>
         <div v-show="showval" ref="foursdiv" class="item animated" :key="4">
           <img src="http://res.beanhomestay.com/static/m/service/img/steward4.jpg" alt="">
-          <div class="fingerclick">
+          <div class="fingerclick" v-show="!showair" @click="firstfinger">
             <div class="finger">
               <img src="http://res.beanhomestay.com/static/m/service/img/finger.png" alt="">
             </div>
@@ -29,29 +29,43 @@
         </div>
       </transition-group>
       <!-- 展示接机服务后 第二次加载 -->
-      <div class="service2">
+      <div class="service2" v-show="showair" style="min-height:100%">
         <div class="service2-zhan" style="height: 0.82rem;"></div>
-        <div class="item"><img src="http://res.beanhomestay.com/static/m/service/img/steward5.jpg" alt=""></div>
-        <div class="item"><img src="http://res.beanhomestay.com/static/m/service/img/steward6.jpg" alt=""></div>
-        <div class="item"><img src="http://res.beanhomestay.com/static/m/service/img/steward7.jpg" alt=""></div>
-        <div class="item"><img src="http://res.beanhomestay.com/static/m/service/img/steward8.jpg" alt=""></div>
+        <transition-group
+        tag="div"
+        >
+          <div v-show="showair" class="item animated fadeInLeft" key="1"><img src="http://res.beanhomestay.com/static/m/service/img/steward5.jpg" alt=""></div>
+          <div v-show="showair" class="item animated fadeInRight" key="2"><img src="http://res.beanhomestay.com/static/m/service/img/steward6.jpg" alt=""></div>
+          <div v-show="showair" class="item animated fadeInLeft" key="3"><img src="http://res.beanhomestay.com/static/m/service/img/steward7.jpg" alt=""></div>
+          <div v-show="showair" class="item animated fadeInLeft" key="4"><img src="http://res.beanhomestay.com/static/m/service/img/steward8.jpg" alt=""></div>
+        </transition-group>
       </div>
       <!-- 第65天 -->
-      <div class="sixthfive_day">
+      <div class="sixthfive_day" v-show="showapproval">
         <div class="service2-zhan" style="height: 0.82rem;"></div>
         <h2>第65天</h2>
-        <div v-show="showval" class="item"><p><span>出游审批</span></p></div>
         <div class="content">
-          <div class="item"><img src="http://res.beanhomestay.com/static/m/service/img/65day1.jpg" alt=""></div>
-          <div class="item animated">
-            <img src="http://res.beanhomestay.com/static/m/service/img/65day2.jpg" alt="">
-            <div class="fingerclick">
-              <div class="finger">
-                <img src="http://res.beanhomestay.com/static/m/service/img/finger.png" alt="">
+          <transition-group
+            tag="div"
+            >
+            <div v-show="showapproval" class="item animated fadeInUp" key="0"><p><span>出游审批</span></p></div>
+            <div v-show="showapproval" class="item animated fadeInRight" key="1"><img src="http://res.beanhomestay.com/static/m/service/img/65day1.jpg" alt=""></div>
+            <div v-show="showapproval" class="item animated fadeInRight" key="2">
+              <img src="http://res.beanhomestay.com/static/m/service/img/65day2.jpg" alt="">
+              <div class="fingerclick" v-show="!showpase" @click="secondfinger">
+                <div class="finger">
+                  <img src="http://res.beanhomestay.com/static/m/service/img/finger.png" alt="">
+                </div>
+                <div class="circle"></div>
+                <div class="circle2"></div>
               </div>
-              <div class="circle"></div>
-              <div class="circle2"></div>
             </div>
+          </transition-group>
+          <div class="item pass_item">
+            <transition enter-active-class="fadeInLeft">
+              <img v-show="showpase" class="animated" key="1" src="http://res.beanhomestay.com/static/m/service/img/65day3.jpg" alt="">
+            </transition>
+            <div style="display:none" class="aflip animated" key="2"></div>
           </div>
         </div>
       </div>
@@ -61,23 +75,53 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
   name: 'ServiceOne',
   props: {
-    showval: Boolean
+    showval: Boolean,
+    showair: Boolean,
+    showpase: Boolean
   },
   data () {
     return {
       scroll: '',
-      timer: null
+      timer: null,
+      airshows: true,
+      airitem2: false,
+      showapproval: false
+    }
+  },
+  methods: {
+    firstfinger: function () {
+      this.$emit('arishowfun', this.airshows)
+    },
+    secondfinger: function () {
+      this.$emit('approvalshowfun', true)
     }
   },
   watch: {
     showval: function () {
       this.box = this.$refs.conbox
       setTimeout(() => {
-        this.box.scrollTop = this.$refs.conbox.scrollHeight
-      }, 4000)
+        $(this.box).animate({scrollTop: this.$refs.conbox.scrollHeight}, 1500)
+      }, 3500)
+    },
+    showair: function () {
+      this.box = this.$refs.conbox
+      $(this.box).animate({scrollTop: this.$refs.conbox.scrollHeight}, 1500)
+      setTimeout(() => {
+        this.showapproval = true
+        $(this.box).animate({scrollTop: this.$refs.conbox.scrollHeight}, 1500)
+      }, 6000)
+    },
+    showpase: function () {
+      this.box = this.$refs.conbox
+      $(this.box).animate({scrollTop: this.$refs.conbox.scrollHeight}, 1500)
+      setTimeout(() => {
+        $('.aflip').addClass('flipInY').show()
+        this.$emit('chooserolefun', true)
+      }, 1500)
     }
   }
 }
@@ -168,9 +212,20 @@ export default {
           left: 5%
           animation: red-wave2 1s infinite
     .sixthfive_day
+      min-height: 100%
       h2
-        font-size: 0.72rem;
-        color: #544f4f;
-        text-align: center;
-        margin-top: 0.2rem;
+        font-size: 0.72rem
+        color: #544f4f
+        text-align: center
+        margin-top: 0.2rem
+      .pass_item
+        position: relative
+        .aflip
+          width: 1.41rem
+          height: 0.93rem
+          background: url('http://res.beanhomestay.com/static/m/service/img/pass.png')
+          background-size: 100% 100%
+          position: absolute
+          top: 0.6rem
+          left: 4.42rem
 </style>

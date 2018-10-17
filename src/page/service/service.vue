@@ -1,8 +1,8 @@
 <template>
   <div>
+    <div class="jump" :style="{ display: finishval }" @click="jumppage">跳过</div>
     <transition-group tag="div" leave-active-class="fadeOutUp" enter-active-class="fadeInDown">
       <div class="service animated" :key="6" v-show="page1show">
-        <div class="jump" :style="{ display: finishval }" @click="jumppage">跳过</div>
         <div class="content">
           <transition-group
             enter-active-class="fadeInUp"
@@ -18,10 +18,17 @@
           <span class="iconfont icon-down"></span>
         </div>
       </div>
-      <!-- <service-one :showval="page2show" v-show="page2show" :key="8" class="animated"></service-one> -->
-      <!-- <airport-service :showval="page2show" v-show="page2show" :key="9" class="animated"></airport-service> -->
-      <approval-home :showval="page2show" v-show="page2show" :key="10" class="animated"></approval-home>
+      <!-- 对话 -->
+      <service-one :showval="page2show" :showair="page3show"  :showpase="approvalpase" @approvalshowfun="getapproval"  @arishowfun="getairshow" @chooserolefun="getroleshow" v-show="page2show" :key="8" class="animated"></service-one>
+      <!-- 角色选择 -->
+      <choose-role :showval="roleshow" @choosenum="choosenumfun" v-show="roleshow" :key="11" class="animated fadeInRight"></choose-role>
+      <!-- 表单 -->
+      <choose-form :showval="formshow" :formnum="formnum" v-show="formshow" :key="12" class="animated fadeInRight"></choose-form>
     </transition-group>
+    <!-- 接机服务 -->
+    <airport-service :showval="airshow" @airsavefun="getairsave" v-show="airshow"></airport-service>
+    <!-- 家长批准 -->
+    <approval-home :showval="approvalshow" @passfun="getpassfun" v-show="approvalshow"></approval-home>
   </div>
 </template>
 
@@ -29,6 +36,8 @@
 import ServiceOne from './components/ServiceOne'
 import airportService from './components/airportService'
 import approvalHome from './components/approvalHome'
+import chooseRole from './components/chooseRole'
+import chooseForm from './components/chooseForm'
 export default {
   name: 'service',
   data () {
@@ -37,17 +46,28 @@ export default {
       show: false,
       showicon: false,
       page2show: false,
-      page1show: true
+      page1show: true,
+      airshow: false,
+      approvalshow: false,
+      roleshow: false,
+      formshow: false,
+      page3show: false,
+      page4show: false,
+      approvalpase: false,
+      formnum: 0
     }
   },
   components: {
     ServiceOne,
     airportService,
-    approvalHome
+    approvalHome,
+    chooseRole,
+    chooseForm
   },
   methods: {
     jumppage () {
-      alert(1)
+      this.roleshow = true
+      this.finishval = 'none'
     },
     finishan () {
       setTimeout(() => {
@@ -61,6 +81,31 @@ export default {
     showpage () {
       this.page1show = false
       this.page2show = true
+    },
+    getairshow (msg) {
+      this.airshow = msg
+    },
+    getairsave (msg) {
+      setTimeout(() => {
+        this.page3show = msg
+        this.airshow = false
+      }, 1000)
+    },
+    getapproval (msg) {
+      this.approvalshow = msg
+    },
+    getpassfun (msg) {
+      this.approvalpase = msg
+      this.approvalshow = false
+    },
+    getroleshow (msg) {
+      setTimeout(() => {
+        this.roleshow = true
+      }, 1000)
+    },
+    choosenumfun (num) {
+      this.formnum = num
+      this.formshow = true
     }
   },
   mounted () {
@@ -71,6 +116,18 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/commonsty.styl'
+.jump
+  width: 1rem;
+  padding: 0.08rem 0;
+  text-align: center;
+  border-radius: 0.15rem;
+  background: rgba(0,0,0,0.3);
+  font-size: 0.32rem;
+  color: #fff;
+  position: fixed;
+  top: 1rem;
+  right: 0.3rem;
+  z-index: 99;
 .service
   position: fixed
   left:0
@@ -95,15 +152,6 @@ export default {
     animation: circles 1.2s linear 0s 1
     animation-fill-mode:forwards
     z-index:2
-  .jump
-    position: absolute
-    right: 0.5rem
-    top: 0.8rem
-    z-index:3
-    background-color: rgba(0,0,0,0.6)
-    color: #fff
-    padding: 0.1rem 0.14rem
-    border-radius: 0.14rem
   .content
     position: absolute
     top: 68%
