@@ -18,13 +18,17 @@
           <span class="iconfont icon-down"></span>
         </div>
       </div>
-      <service-one :showval="page2show" v-show="page2show" :key="8" class="animated"></service-one>
+      <!-- <service-one :showval="page2show" v-show="page2show" :key="8" class="animated"></service-one> -->
+      <!-- <airport-service :showval="page2show" v-show="page2show" :key="9" class="animated"></airport-service> -->
+      <approval-home :showval="page2show" v-show="page2show" :key="10" class="animated"></approval-home>
     </transition-group>
   </div>
 </template>
 
 <script>
 import ServiceOne from './components/ServiceOne'
+import airportService from './components/airportService'
+import approvalHome from './components/approvalHome'
 export default {
   name: 'service',
   data () {
@@ -37,7 +41,9 @@ export default {
     }
   },
   components: {
-    ServiceOne
+    ServiceOne,
+    airportService,
+    approvalHome
   },
   methods: {
     jumppage () {
